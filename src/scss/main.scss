@@ -2,3 +2,17 @@
 @import 'components';
 @import 'header';
 @import 'vars';
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+    zoom: 0.8 !important;
+    @media screen and (max-width: 1111px) {
+        zoom: 1;
+    }
+}
+
+.wrapper {
+    max-width: 1110px;
+    margin: 0 auto;
+}
