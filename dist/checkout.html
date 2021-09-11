@@ -1,0 +1,795 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>ST-Style</title>
+</head>
+
+<body>
+<div class="page">
+    <header class="desktop-header">
+        <nav class="header__top-bar">
+            <div class="wrapper">
+                <ul>
+                    <li><img src="img/deliver.png" alt="">Быстрая доставка по всему миру</li>
+                    <li><img src="img/deliver.png" alt="">Быстрая доставка по всему миру</li>
+                    <li><img src="img/deliver.png" alt="">Быстрая доставка по всему миру</li>
+                </ul>
+                <ul class="language-switcher">
+                    <li class="language-switcher__default-language"><a href="">RU</a>
+                        <ul class="language-switcher__select">
+                            <li><a href="">UA</a></li>
+                            <li><a href="">EN</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="header__middle-bar">
+            <div class="wrapper">
+                <div class="logo"><img src="img/logo.png" alt=""></div>
+                <form action="" class="search-form">
+                    <input type="input" placeholder="Поиск" name="" id="" class="search-form__input"><button type='submit' class="search-form__input__icon"></button>
+                </form>
+                <div class="auth-icons">
+                    <a href="">Вход</a>/<a href="">Регистрация</a>
+
+                    <ul class="auth-dropdown">
+                        <li><a href="">Личный кабинет</a></li>
+                        <li><a href="">Мои заказы</a></li>
+                        <li><a href="">Мои бонусы</a></li>
+                        <li class="logout"><a href="">Выход</a></li>
+                    </ul>
+                </div>
+                <div class="cart-icon">
+                    <a data-fancybox data-src="#open-minicart" href="javascript:;">
+                        <div><span id="kolkorz"> 1</span></div>
+                    </a>
+                </div>
+                <div class="favorites-icon">
+                    <a href="">
+                        <div> <span id="kolwish"> 1</span></div>
+                    </a>
+                </div>
+                <div class="economy-switcher">
+                    <select name="" id="">
+                        <option value="">UAH</option>
+                        <option value="">RUB</option>
+                        <option value="">USD</option>
+                    </select>
+                </div>
+            </div>
+        </nav>
+        <nav class="header__bottom-bar">
+            <div class="wrapper">
+                <div class="main-menu">
+                    <a href="" class="main-menu__link">Каталог</a>
+                    <a href="" class="main-menu__link">Новинки</a>
+                    <!-- <a href="" class="main-menu__link">Новогоднее</a> -->
+                    <a href="" class="main-menu__link">Маленькие размеры</a>
+                    <a href="" class="main-menu__link">Размеры норма</a>
+                    <a href="" class="main-menu__link">Размеры 48+</a>
+                    <a href="" class="main-menu__link allocated">%Sale</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <header class="mobile-header">
+        <nav class="mobile-header__top-bar">
+            <div class="wrapper">
+                <select name="" id="">
+                    <option value="">UAH</option>
+                    <option value="">RUB</option>
+                    <option value="">USD</option>
+                </select>
+                <ul class="fade slider-bullets">
+                    <li class="show">Быстрая доставка по всему ми</li>
+                    <li>Быстрая доставка по всему миру</li>
+                    <li>Быстрая доставка по всему миру</li>
+                </ul>
+                <select name="" id="">
+                    <option value="">RU</option>
+                    <option value="">EN</option>
+                    <option value="">BL</option>
+                </select>
+            </div>
+        </nav>
+
+        <nav class="mobile-header__middle-bar">
+            <div class="wrapper">
+                <div class="first-container">
+                    <div class="wrap">
+                        <div class="burger ">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="favorites-icon">
+                            <a href="">
+                                <div><span id="kolwish"> 1</span></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="logo"><img src="img/logo.png" alt=""></div>
+                    <div class="wrap">
+                        <div class="auth-icons">
+                            <a href=""></a>
+                        </div>
+                        <div class="cart-icon">
+                            <a data-fancybox data-src="#open-minicart" href="javascript:;">
+                                <div><span id="kolkorz"> 1</span></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay"></div>
+            <div class="mobile-menu">
+
+                <div class="container">
+                    <a href="" class="back-link">Назад</a>
+
+                    <ul>
+                        <li class="has-dropdown">Каталог
+                            <ul>
+                                <li><a href="">Платья</a></li>
+                                <li><a href="">Топы</a></li>
+                                <li><a href="">Брюки</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-dropdown">Новинки
+                            <ul>
+                                <li><a href="">Платья</a></li>
+                                <li><a href="">Топы</a></li>
+                                <li><a href="">Брюки</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Новогодние</a></li>
+                        <li><a href="">Маленькие размеры</a></li>
+                        <li><a href="">Размеры норма</a></li>
+                        <li><a href="">Размеры 48+</a></li>
+                        <li class="sale_link"><a href="">%SALE</a></li>
+                    </ul>
+
+                    <ul class="login_menu">
+                        <li><a href="">Личный кабинет</a></li>
+                        <li><a href="">Моя корзина</a></li>
+                    </ul>
+
+                    <div class="contacts">
+                        <h4>Контакты</h4>
+                        <a href="tel:+38 095 777 10 72" class="phone">+38 095 777 10 72</a>
+                        <a href="tel:+38 095 777 10 72" class="phone">+38 095 777 10 72</a>
+                        <a href="mailto:sale@st-style.com.ua" class="email">sale@st-style.com.ua</a>
+                        <p class="worktime">Пн-Сб (10:00 - 19:00)</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="breadcrumbs">
+        <div class="wrapper">
+            <a href="">Главная</a>
+            <span class="separator"> / </span>
+            <a class="disabled">Оформление заказа</a>
+        </div>
+    </section>
+    <section class="ordering">
+        <h1 class="title__block">
+            <div class="wrapper">Оформление заказа</div>
+
+        </h1>
+        <div class="wrapper">
+
+            <div class="column">
+
+
+                <form action="" class="ordering">
+                    <label for="name">ФИО<span>*</span></label>
+                    <input type="text" name="fio" id="name" placeholder="ФИО">
+
+
+                    <label for="email">Ваш E-mail<span>*</span></label>
+                    <input type="email" name="email" id="email" placeholder="ivanov@gmail.com">
+
+                    <label for="phone">Телефон<span>*</span></label>
+                    <input type="tel" name="" id="name" placeholder="+38 000 000 00 00">
+
+                    <label for="country">Страна<span>*</span></label>
+                    <select name="" id="country">
+                        <option value="">Выберите страну</option>
+                        <option value="ukraine">Украина</option>
+                        <option value="russia">Россия</option>
+                        <option value="belorusia">Белоруссия</option>
+                        <option value="kazahstan">Казахстан</option>
+                        <option value="other_country">Другая страна</option>
+                    </select>
+
+                    <div class="form-c ukraine">
+                        <label>Способ доставки<span>*</span></label>
+
+                        <input type="radio" name="delivery_method" id="new-post" class="delivery_method" value="new-post">
+                        <label for="new-post" class="radio">Новая почта - отделение</label>
+                        <div class="sub-text">По тарифам перевозчика
+                            <p class="info-modal" tabindex="0"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia molestiae fugit expedita, corrupti facere veritatis non! </span></p>
+                        </div>
+                        <div class="new-post input">
+                            <label for="city">Город<span>*</span></label>
+                            <input type="text" name="" id="city">
+
+                            <label for="new-post__select ">Отделение<span>*</span></label>
+                            <select name="" id="new-post__select " class="new-post__select">
+                                <option value="">Веберите отделение</option>
+                                <option value="1">1</option>
+                                <option value="2">1</option>
+                                <option value="3">1</option>
+                            </select>
+
+                            <a href="" class="show_on_map">Показать на карте</a>
+                        </div>
+
+                        <input type="radio" name="delivery_method" id="new-post__adress" class="delivery_method" value="new-post__adress">
+                        <label for="new-post__adress" class="radio">Новая почта - курьер</label>
+                        <div class="sub-text">По тарифам перевозчика
+                            <p class="info-modal" tabindex="0"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia molestiae fugit expedita, corrupti facere veritatis non! </span></p>
+                        </div>
+                        <div class="new-post__adress input">
+                            <label for="city">Город<span>*</span></label>
+                            <input type="text" name="" id="city">
+                            <label for="street">Улица<span>*</span></label>
+                            <input type="text" name="" id="street">
+                            <label for="house">Дом<span>*</span></label>
+                            <input type="text" name="" id="house">
+                            <label for="room">Квартира<span>*</span></label>
+                            <input type="text" name="" id="room">
+                        </div>
+
+                        <input type="radio" name="delivery_method" id="ukrpost" value="ukrpost_u">
+                        <label for="ukrpost" class="radio">Укрпочта</label>
+                        <div class="sub-text">По тарифам перевозчика
+                            <p class="info-modal" tabindex="0"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia molestiae fugit expedita, corrupti facere veritatis non! </span></p>
+                        </div>
+                        <div class="ukrpost_u input">
+                            <label for="city">Город<span>*</span></label>
+                            <input type="text" name="" id="city">
+                            <label for="ukrpost__select ">Отделение<span>*</span></label>
+                            <select name="" id="ukrpost__select " class="ukrpost__select">
+                                <option value="">Веберите отделение</option>
+                                <option value="1">1</option>
+                                <option value="2">1</option>
+                                <option value="3">1</option>
+                            </select>
+                            <a href="" class="show_on_map">Показать на карте</a>
+                        </div>
+
+                        <input type="radio" name="delivery_method" id="justin" value="justin">
+                        <label for="justin" class="radio">Justin</label>
+                        <div class="sub-text">По тарифам перевозчика
+                            <p class="info-modal" tabindex="0"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia molestiae fugit expedita, corrupti facere veritatis non! </span></p>
+                        </div>
+                        <div class="justin input">
+                            <label for="city">Город<span>*</span></label>
+                            <input type="text" name="" id="city">
+                            <label for="justin__select ">Отделение<span>*</span></label>
+                            <select name="" id="justin__select " class="justin__select">
+                                <option value="">Веберите отделение</option>
+                                <option value="1">1</option>
+                                <option value="2">1</option>
+                                <option value="3">1</option>
+                            </select>
+                            <a href="" class="show_on_map">Показать на карте</a>
+                        </div>
+
+                        <div class="payments">
+                            <label>Способ оплаты<span>*</span></label>
+
+                            <div class="new-post input justin new-post__adress">
+                                <input type="radio" name="payment-method" id="cod_r" value="cod">
+                                <label for="cod_r" class="radio">Наложенный платеж</label>
+                            </div>
+
+                            <input type="radio" name="payment-method" id="privat24_r">
+                            <label for="privat24_r" class="radio">Приват 24</label>
+
+                            <input type="radio" name="payment-method" id="liqpay_r">
+                            <label for="liqpay_r" class="radio">LiqPay</label>
+
+                            <input type="radio" name="payment-method" id="Visa/Mastercard_r">
+                            <label for="Visa/Mastercard_r" class="radio">Visa / Mastercard</label>
+
+                            <input type="radio" name="payment-method" id="gpay_r">
+                            <label for="gpay_r" class="radio">GooglePay</label>
+
+                            <input type="radio" name="payment-method" id="apple-pay_r">
+                            <label for="apple-pay_r" class="radio">Apple Pay</label>
+
+                            <input type="radio" name="payment-method" id="req_r">
+                            <label for="req_r" class="radio">Оплата по реквизитам</label>
+
+
+
+
+                            <div class="comments">
+                                <label for="comment_u">Комментарий</label>
+
+                                <textarea name="" id="comment_u" cols="30" rows="10"></textarea>
+
+                                <input type="checkbox" name="" id="not-call_u">
+                                <label for="not-call_u" class="checkbox">Не перезванивайте мне</label>
+                            </div>
+                            <button class="btn_submit">Оформить заказ</button>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-c russia">
+                        <label>Способ доставки<span>*</span></label>
+
+                        <input type="radio" name="delivery_method" id="ukrpost_r" value="ukrpost_r">
+                        <label for="ukrpost_r" class="radio">Укрпочта</label>
+                        <div class="sub-text">По тарифам перевозчика
+                            <p class="info-modal" tabindex="0"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia molestiae fugit expedita, corrupti facere veritatis non! </span></p>
+                        </div>
+                        <div class="input ukrpost_r">
+                            <label for="other_name">ФИО<span>*</span></label>
+                            <input type="text" name="" id="other_name">
+                            <label for="city">Город<span>*</span></label>
+                            <input type="text" name="" id="city">
+                            <label for="post_index">Индекс<span>*</span></label>
+                            <input type="text" name="" id="post_index">
+                            <label for="adress">Адрес<span>*</span></label>
+                            <input type="text" name="" id="adress">
+
+                        </div>
+
+                        <div class="payments">
+                            <label>Способ оплаты<span>*</span></label>
+
+                            <input type="radio" name="payment-method" id="Visa/Mastercard_r">
+                            <label for="Visa/Mastercard_r" class="radio">Visa / Mastercard</label>
+
+                            <input type="radio" name="payment-method" id="sberbank_r">
+                            <label for="sberbank_r" class="radio">Оплата на карту Сбербанк России</label>
+
+                            <input type="radio" name="payment-method" id="western_r">
+                            <label for="western_r" class="radio">Western Union</label>
+
+                            <div class="comments">
+                                <label for="comment_r">Комментарий</label>
+
+                                <textarea name="" id="comment_r" cols="30" rows="10"></textarea>
+
+                                <input type="checkbox" name="" id="not-call_r">
+                                <label for="not-call_r" class="checkbox">Не перезванивайте мне</label>
+                            </div>
+                            <button class="btn_submit">Оформить заказ</button>
+                        </div>
+
+                    </div>
+
+                    <div class="form-c belorusia">
+                        <label>Способ доставки<span>*</span></label>
+
+                        <input type="radio" name="delivery_method" id="ukrpost_bl" value="ukrpost_bl">
+                        <label for="ukrpost_bl" class="radio">Укрпочта</label>
+                        <div class="sub-text">По тарифам перевозчика
+                            <p class="info-modal" tabindex="0"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia molestiae fugit expedita, corrupti facere veritatis non! </span></p>
+                        </div>
+                        <div class="input ukrpost_bl">
+                            <label for="other_name">ФИО<span>*</span></label>
+                            <input type="text" name="" id="other_name">
+                            <label for="city">Город<span>*</span></label>
+                            <input type="text" name="" id="city">
+                            <label for="post_index">Индекс<span>*</span></label>
+                            <input type="text" name="" id="post_index">
+                            <label for="adress">Адрес<span>*</span></label>
+                            <input type="text" name="" id="adress">
+
+                        </div>
+
+                        <div class="payments">
+                            <label>Способ оплаты<span>*</span></label>
+
+                            <input type="radio" name="payment-method" id="Visa/Mastercard_br">
+                            <label for="Visa/Mastercard_br" class="radio">Visa / Mastercard</label>
+
+                            <input type="radio" name="payment-method" id="western_br">
+                            <label for="western_br" class="radio">Western Union</label>
+
+                            <div class="comments">
+                                <label for="comment_bl">Комментарий</label>
+
+                                <textarea name="" id="comment_bl" cols="30" rows="10"></textarea>
+
+                                <input type="checkbox" name="" id="not-call_bl">
+                                <label for="not-call_bl" class="checkbox">Не перезванивайте мне</label>
+                            </div>
+                            <button class="btn_submit">Оформить заказ</button>
+                        </div>
+
+                    </div>
+
+                    <div class="form-c kazahstan">
+                        <label>Способ доставки<span>*</span></label>
+
+                        <input type="radio" name="delivery_method" id="ukrpost_kz" value="ukrpost_kz">
+                        <label for="ukrpost_kz" class="radio">Укрпочта</label>
+                        <div class="sub-text">По тарифам перевозчика
+                            <p class="info-modal" tabindex="0"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia molestiae fugit expedita, corrupti facere veritatis non! </span></p>
+                        </div>
+                        <div class="input ukrpost_kz">
+                            <label for="other_name">ФИО<span>*</span></label>
+                            <input type="text" name="" id="other_name">
+                            <label for="city">Город<span>*</span></label>
+                            <input type="text" name="" id="city">
+                            <label for="post_index">Индекс<span>*</span></label>
+                            <input type="text" name="" id="post_index">
+                            <label for="adress">Адрес<span>*</span></label>
+                            <input type="text" name="" id="adress">
+
+                        </div>
+
+                        <div class="payments">
+                            <label>Способ оплаты<span>*</span></label>
+
+                            <input type="radio" name="payment-method" id="Visa/Mastercard_kz">
+                            <label for="Visa/Mastercard_kz" class="radio">Visa / Mastercard</label>
+
+                            <input type="radio" name="payment-method" id="western_kz">
+                            <label for="western_kz" class="radio">Western Union</label>
+
+                            <div class="comments">
+                                <label for="comment_kz">Комментарий</label>
+
+                                <textarea name="" id="comment_kz" cols="30" rows="10"></textarea>
+
+                                <input type="checkbox" name="" id="not-call_kz">
+                                <label for="not-call_kz" class="checkbox">Не перезванивайте мне</label>
+                            </div>
+                            <button class="btn_submit">Оформить заказ</button>
+                        </div>
+
+                    </div>
+
+                    <div class="form-c other_country">
+                        <label>Способ доставки<span>*</span></label>
+
+                        <input type="radio" name="delivery_method" id="ukrpost_other" value="ukrpost_other">
+                        <label for="ukrpost_other" class="radio">Укрпочта</label>
+                        <div class="sub-text">По тарифам перевозчика
+                            <p class="info-modal" tabindex="0"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia molestiae fugit expedita, corrupti facere veritatis non! </span></p>
+                        </div>
+                        <div class="input ukrpost_other">
+                            <label for="other_name">ФИО<span>*</span></label>
+                            <input type="text" name="" id="other_name">
+                            <label for="city">Город<span>*</span></label>
+                            <input type="text" name="" id="city">
+                            <label for="post_index">Индекс<span>*</span></label>
+                            <input type="text" name="" id="post_index">
+                            <label for="adress">Адрес<span>*</span></label>
+                            <input type="text" name="" id="adress">
+
+                        </div>
+
+                        <div class="payments">
+                            <label>Способ оплаты<span>*</span></label>
+
+                            <input type="radio" name="payment-method" id="Visa/Mastercard_other">
+                            <label for="Visa/Mastercard_other" class="radio">Visa / Mastercard</label>
+
+                            <input type="radio" name="payment-method" id="western_other">
+                            <label for="western_other" class="radio">Western Union</label>
+
+                            <div class="comments">
+                                <label for="comment_other">Комментарий</label>
+
+                                <textarea name="" id="comment_other" cols="30" rows="10"></textarea>
+
+                                <input type="checkbox" name="" id="not-call_other">
+                                <label for="not-call_other" class="checkbox">Не перезванивайте мне</label>
+                            </div>
+                            <button class="btn_submit">Оформить заказ</button>
+                        </div>
+
+                    </div>
+
+                    <div class="mobile__submit-controller">
+                        <div class="container">
+                            <div class="container-row">
+                                <h4>Стоимость</h4>
+                                <h3>26 999 грн</h3>
+                            </div>
+                            <div class="container-row">
+                                <h4 class="sale-text">Скидка 20%</h4>
+                                <h3>-200 грн</h3>
+                            </div>
+                            <div class="container-row">
+                                <h4>Сумма к оплате</h4>
+                                <h3>800 грн</h3>
+                            </div>
+                            <p>Ваш промокод</p>
+                            <input type="text">
+                            <button class="btn_submit">Оформить заказ</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="column">
+                <div class="cart-box">
+                    <div class="cart-box__header">
+                        <h1>Ваш заказ</h1>
+                    </div>
+                    <div class="cart-box__order-list ">
+                        <div class="empty-cart-frame">
+                            <div class="container">
+                                <img src="img/cart-big.svg" alt="">
+                                <h5>Ваша корзина пуста</h5>
+                                <p>Добавьте товары чтобы это исправить</p>
+                                <a href="" class="btn">Начать покупки</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <a href="" class="cart-box_edit-cart">Редактировать</a>
+                    <div class="cart-box__footer">
+                        <div class="cart-box__footer__row">
+                            <h2>Общая стоимость:</h2>
+                            <h2 class="all_sum">0 грн</h2>
+                        </div>
+                        <div class="cart-box__footer__row">
+                            <h2>Cкидка:</h2>
+                            <h2 class="discount_size">0 грн</h2>
+                        </div>
+                        <div class="cart-box__footer__row">
+                            <h2>Сумма к оплате:</h2>
+                            <h2 class="sum_for_pay"> 0 грн</h2>
+                        </div>
+
+
+                        <div class="cart-box__footer__promo">
+                            <h3>Ваш промокод</h3>
+                            <div class="cart-box__footer__row">
+                                <input type="text" name="" id="" class="promo-input">
+                                <button type="submit" class="btn">Применить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+    <div class="wrapper">
+        <div class="column">
+            <h4 class="footer__title footer-has-drop">Оптовым клиентам</h4>
+            <div class="dropdown-footer">
+                <a href="">Стать партнером</a>
+                <a href="">Дропшиппинг</a>
+                <a href="">Скачать каталог</a>
+                <a href="">Отзывы</a>
+            </div>
+        </div>
+        <!-- <div class="column">
+            <h4 class="footer__title footer-has-drop">Профиль</h4>
+            <div class="dropdown-footer">
+            <a href="">Избранное</a>
+            <a href="">Мои заказы</a>
+            <a href="">Сообщить об оплате</a>
+            <a href="">Размерная сетка</a>
+            </div>
+        </div> -->
+        <div class="column">
+            <h4 class="footer__title footer-has-drop">Информация</h4>
+            <div class="dropdown-footer">
+                <a href="">Оплата и доставка</a>
+                <a href="">Возврат/обмен</a>
+                <div class="column_opc">
+                    <h4 class="footer__title">FAQ</h4>
+                    <a href="">О нас</a>
+                    <a href="">Каталог</a>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <h4 class="footer__title">Контакты</h4>
+            <a href="tel:+38 095 777 10 72" class="phone">+38 095 777 10 72</a>
+            <a href="tel:+38 073 777 10 72" class="phone">+38 095 777 10 72</a>
+            <a href="mailto:sale@st-style.com.ua" class="e-mail">sale@st-style.com.ua</a>
+            <p class="worktime">Пн-Сб (10:00 - 19:00)</p>
+        </div>
+        <div class="column">
+            <h4 class="footer__title">Подпись на рассылку</h4>
+            <p>Подпишитесь на рассылку и получайте уведомления о новинках первыми</p>
+            <form action="">
+                <input type="text" placeholder="E-mail"> <button></button>
+            </form>
+            <div class="social-icons">
+                <a href=""><img src="img/instagram.svg" alt="" class='img-svg'></a>
+                <a href=""><img src="img/okru.svg" alt="" class='img-svg'></a>
+                <a href=""><img src="img/vk.svg" alt="" class='img-svg'></a>
+                <a href=""><img src="img/facebook.svg" alt="" class='img-svg'></a>
+            </div>
+        </div>
+    </div>
+    <div class="low-footer">
+        <div class="wrapper">
+            ST-Style © Copyright 2021. Все права защищены
+
+            <a href=""> Политика конфиденциальности</a>
+
+        </div>
+    </div>
+    <a id="button_go-up"><img src="img/ar-top.png" alt=""></a>
+</footer>
+<div class="minicart" style="display: none" id="open-minicart">
+    <div class="minicart_header">
+        <h1>Корзина</h1>
+    </div>
+
+    <div class="minicart_scrolled-container">
+
+    </div>
+
+    <div class="minicart-footer">
+        <div class="column"><a href="" class="btn">Продолжить покупки</a></div>
+        <div class="column">
+            <div class="price-container">
+                <p><strong>(<span>2</span> товара)</strong> на общую стоимость:</p>
+                <h1>26 782 грн</h1>
+            </div>
+            <a href="" class="btn">Оформить заказ</a>
+        </div>
+    </div>
+</div>
+<div style="display: none;" id="add-testimonals">
+    <h1 class="fancy-box_title">Оставить отзыв</h1>
+    <form action="">
+        <div class="change_rating">
+            <div class="rating">
+                <input type="radio" name="rating" id="rating-5">
+                <label for="rating-5"></label>
+                <input type="radio" name="rating" id="rating-4">
+                <label for="rating-4"></label>
+                <input type="radio" name="rating" id="rating-3">
+                <label for="rating-3"></label>
+                <input type="radio" name="rating" id="rating-2">
+                <label for="rating-2"></label>
+                <input type="radio" name="rating" id="rating-1">
+                <label for="rating-1"></label>
+            </div>
+        </div>
+
+        <label for="fio">ФИО <span>*</span></label>
+        <input type="text" id="fio" placeholder="ФИО">
+        <label for="fio">Введите Email или телефон <span>*</span></label>
+        <input type="text" id="fio" placeholder="Email или телефон">
+        <label for="fio">Ваш комментарий <span>*</span></label>
+        <textarea id="fio" placeholder="Комментарий"></textarea>
+
+        <input type="button" value="Отправить" class="btn">
+    </form>
+</div>
+<div class="alert-container">
+
+</div>
+<div id="sizes-table" style="display: none;">
+    <table>
+        <tr>
+            <td>СНГ</td>
+            <td>EU</td>
+            <td>RU</td>
+            <td>Объем груди</td>
+            <td>Объем талии</td>
+            <td>Объем бедер</td>
+        </tr>
+        <tr>
+            <td>s</td>
+            <td>36</td>
+            <td>42</td>
+            <td>82-86</td>
+            <td>62-66</td>
+            <td>90-94</td>
+        </tr>
+        <tr>
+            <td>s-m</td>
+            <td>-</td>
+            <td>42-44</td>
+            <td>82-90</td>
+            <td>62-70</td>
+            <td>90-98</td>
+        </tr>
+        <tr>
+            <td>m</td>
+            <td>38</td>
+            <td>44</td>
+            <td>86-90</td>
+            <td>66-70</td>
+            <td>94-98</td>
+        </tr>
+        <tr>
+            <td>m-l</td>
+            <td>-</td>
+            <td>44-46</td>
+            <td>86-94</td>
+            <td>66-74</td>
+            <td>94-102</td>
+        </tr>
+        <tr>
+            <td>l</td>
+            <td>40</td>
+            <td>46</td>
+            <td>90-94</td>
+            <td>70-74</td>
+            <td>98-102</td>
+        </tr>
+        <tr>
+            <td>xl</td>
+            <td>42</td>
+            <td>48</td>
+            <td>94-98</td>
+            <td>74-78</td>
+            <td>102-106</td>
+        </tr>
+        <tr>
+            <td>2xl</td>
+            <td>44</td>
+            <td>50</td>
+            <td>98-102</td>
+            <td>78-82</td>
+            <td>106-110</td>
+        </tr>
+        <tr>
+            <td>3xl</td>
+            <td>46</td>
+            <td>52</td>
+            <td>102-106</td>
+            <td>82-86</td>
+            <td>110-114</td>
+        </tr>
+        <tr>
+            <td>4xl</td>
+            <td>48</td>
+            <td>54</td>
+            <td>106-110</td>
+            <td>86-90</td>
+            <td>114-118</td>
+        </tr>
+        <tr>
+            <td>5xl</td>
+            <td>-</td>
+            <td>56</td>
+            <td>110-114</td>
+            <td>90-94</td>
+            <td>118-122</td>
+        </tr>
+        <tr>
+            <td>6xl</td>
+            <td>-</td>
+            <td>58</td>
+            <td>114-118</td>
+            <td>94-98</td>
+            <td>122-126</td>
+        </tr>
+    </table>
+</div>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/app.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+</body>
+
+</html>
