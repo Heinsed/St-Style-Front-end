@@ -1,0 +1,493 @@
+// FONTS START
+h1,
+h2 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 43px;
+    color: $main-font-color;
+    strong {
+        font-weight: bold;
+    }
+}
+
+h3 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 37px;
+    color: $main-font-color;
+    strong {
+        font-weight: bold;
+    }
+}
+
+h4 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 30px;
+    strong {
+        font-weight: bold;
+    }
+}
+
+h5 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    strong {
+        font-weight: bold;
+    }
+}
+
+h6 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    strong {
+        font-weight: bold;
+    }
+}
+
+p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 29px;
+    strong {
+        font-weight: bold;
+    }
+}
+
+// FONTS END
+// 
+// 
+// ELEMENTS START
+.btn {
+    width: 100%;
+    background: #1A1A1A;
+    border-radius: 5px;
+    padding: 15px 21px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.09em;
+    color: #FFFFFF;
+}
+
+label {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    width: 100%;
+    color: $main-font-color;
+    display: inline-block;
+    margin-bottom: 15px;
+    span {
+        color: $main-color;
+    }
+}
+
+input {
+    width: 100%;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 15px 21px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    margin-bottom: 28px;
+    line-height: 20px;
+    letter-spacing: 0.09em;
+    color: $main-font-color;
+}
+
+input[type="search"] {
+    width: 100%;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 15px 21px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    margin-bottom: 0;
+    line-height: 20px;
+    letter-spacing: 0.09em;
+    color: $main-font-color;
+    &::-webkit-search-cancel-button {
+        -webkit-appearance: none;
+    }
+}
+
+input[type="checkbox"]+label {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    position: relative;
+    display: inline-block;
+    width: unset;
+    line-height: 25px;
+    top: -8px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+input[type="checkbox"]+label {
+    display: inline-flex;
+    align-items: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+input[type="checkbox"]+label::before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    left: -20px;
+    border: solid 1px $elements-color;
+    border-radius: 5px;
+    position: relative;
+    transition: 0.1s;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+input[type="checkbox"]:checked+label::before {
+    transition: 0.1s;
+    background-color: $main-color;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+.custom-combobox {
+    position: relative;
+    &:after {
+        content: url('../img/select-arrow-down.png');
+        position: absolute;
+        top: 2px;
+        right: 30px;
+    }
+}
+
+.ui-menu {
+    background: #fff;
+    z-index: 9999;
+    width: 100%;
+    max-width: 350px;
+    border: 1px solid $elements-color;
+    border-top: none;
+    padding-top: 10px;
+    border-radius: 5px;
+    max-height: 400px;
+    overflow: scroll;
+    li {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        padding: 10px 20px;
+        line-height: 20px;
+        letter-spacing: 0.09em;
+        color: $main-font-color;
+        cursor: pointer;
+        transition: .4s;
+        &:hover {
+            background: $elements-color;
+            transition: .4s;
+        }
+    }
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]+label {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    position: relative;
+    left: 40px;
+    top: 3px;
+    @media screen and (max-width: 350px) {
+        font-size: 10px;
+    }
+    &::before {
+        content: "";
+        display: block;
+        background: url("../img/radio-1.svg") 0 0 no-repeat;
+        width: 25px;
+        height: 25px;
+        left: -40px;
+        top: -3px;
+        position: absolute;
+        background-size: contain;
+        transition: 0.3s;
+    }
+}
+
+input[type="radio"]:checked+label:before {
+    background: url("../img/radio-2.svg") 0 0 no-repeat;
+}
+
+.flex-container {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.icon-container {
+    img {
+        object-fit: contain;
+        width: 100%;
+    }
+}
+
+// ELEMENTS END
+.minicart {
+    padding: 0 !important;
+    position: fixed;
+    right: 0;
+    transform: scaleY(0);
+    top: 0;
+    background: #fff;
+    z-index: 999999;
+    transition: .4s;
+    transform-origin: top;
+    width: 522px;
+    box-shadow: 0px 32px 70px -40px rgba(0, 0, 0, 0.7);
+    &.visible {
+        transform: scaleY(1);
+        transition: .4s;
+    }
+    .close-btn {
+        background: url("../img/close.png");
+        width: 24px;
+        height: 24px;
+        display: block;
+        background-size: cover;
+        position: absolute;
+        top: 40px;
+        right: 30px;
+        cursor: pointer;
+        background-repeat: no-repeat;
+    }
+    .minicart_header {
+        height: 93px;
+        padding-left: 20px;
+        border-bottom: 1px solid $elements-color;
+        h1 {
+            font-style: normal;
+            font-weight: normal;
+            padding-top: 40px;
+            font-size: 35px;
+        }
+    }
+    .minicart_scrolled-container {
+        overflow-y: scroll;
+        height: 440px;
+        border-bottom: 1px solid $elements-color;
+    }
+    .minicart-product {
+        height: 220px;
+        width: 100%;
+        padding: 20px;
+        overflow: hidden;
+        box-sizing: border-box;
+        display: flex;
+        border-bottom: 1px solid rgba(219, 219, 219, 0.4);
+        position: relative;
+        .delete_order {
+            width: 12px;
+            height: 12px;
+            background: url("../img/close.png");
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            background-size: cover;
+            cursor: pointer;
+            @media screen and (max-width: 1111px) {
+                display: none;
+            }
+        }
+        .image-container {
+            width: 120px;
+            height: 180px;
+            margin: auto 0;
+            margin-right: 20px;
+            overflow: hidden;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+        }
+        .product-container {
+            margin-top: 10px;
+            h1 {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                margin-bottom: 15px;
+                line-height: 29px;
+            }
+            * {
+                position: relative;
+            }
+            .product-container_info {
+                p {
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 20px;
+                    margin-bottom: 10px;
+                }
+                span {
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+            .product-container_control {
+                display: flex;
+                justify-content: space-between;
+                position: absolute;
+                width: 326px;
+                bottom: -50px;
+                .product-container_price {
+                    width: 100px;
+                    .discount-end {
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: #B3B3B3;
+                        text-decoration-line: line-through;
+                    }
+                    .order-box__end-price {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 24px;
+                        color: #E7462E;
+                    }
+                }
+                .control__counter {
+                    margin-top: 15px;
+                    input {
+                        border: none;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 20px;
+                        display: block;
+                        height: 20px;
+                        margin: auto 0;
+                    }
+                    span {
+                        background: none;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 20px;
+                        margin: auto 0;
+                        display: inline-block;
+                        margin-top: 7px;
+                    }
+                }
+            }
+        }
+    }
+    .minicart-footer {
+        padding: 20px 20px 30px 20px;
+        .sum-of-order {
+            margin-bottom: 30px;
+            h4 {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                width: 100%;
+                line-height: 29px;
+                margin-bottom: 5px;
+                span {
+                    text-align: right;
+                    float: right;
+                }
+            }
+            p {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 17px;
+            }
+        }
+        .minicart-control {
+            .flex-container {
+                display: flex;
+                margin-top: 10px;
+                justify-content: space-between;
+                .link {
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 50px;
+                    letter-spacing: 0.09em;
+                    width: 50%;
+                    text-align: center;
+                    &:after {
+                        content: '';
+                        background: #C4C4C4;
+                        margin: 0 auto;
+                        width: 179px;
+                        height: 1px;
+                        margin-top: -11px;
+                        display: block;
+                        border-radius: 5px;
+                    }
+                }
+                .btn {
+                    width: 220px;
+                    background: none;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    letter-spacing: 0.09em;
+                    color: #1A1A1A;
+                    border: 1px solid #C4C4C4;
+                }
+            }
+        }
+    }
+}

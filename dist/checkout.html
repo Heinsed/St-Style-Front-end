@@ -10,65 +10,84 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>ST-Style</title>
+
+
+
+
+
+
 </head>
 
 <body>
-<div class="page">
+
+
     <header class="desktop-header">
         <nav class="header__top-bar">
-            <div class="wrapper">
-                <ul>
-                    <li><img src="img/deliver.png" alt="">Быстрая доставка по всему миру</li>
-                    <li><img src="img/deliver.png" alt="">Быстрая доставка по всему миру</li>
-                    <li><img src="img/deliver.png" alt="">Быстрая доставка по всему миру</li>
-                </ul>
-                <ul class="language-switcher">
-                    <li class="language-switcher__default-language"><a href="">RU</a>
-                        <ul class="language-switcher__select">
-                            <li><a href="">UA</a></li>
-                            <li><a href="">EN</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <nav class="header__middle-bar">
-            <div class="wrapper">
-                <div class="logo"><img src="img/logo.png" alt=""></div>
-                <form action="" class="search-form">
-                    <input type="input" placeholder="Поиск" name="" id="" class="search-form__input"><button type='submit' class="search-form__input__icon"></button>
-                </form>
-                <div class="auth-icons">
-                    <a href="">Вход</a>/<a href="">Регистрация</a>
+            <div class="wrapper__big">
+                <div class="flex-container">
 
-                    <ul class="auth-dropdown">
-                        <li><a href="">Личный кабинет</a></li>
-                        <li><a href="">Мои заказы</a></li>
-                        <li><a href="">Мои бонусы</a></li>
-                        <li class="logout"><a href="">Выход</a></li>
+
+                    <ul>
+                        <li>
+                            <div class="icon-container"><img src="img/deliver.png" alt=""></div>Быстрая доставка по всему миру</li>
+                        <li>
+                            <div class="icon-container"><img src="img/deliver.png" alt=""></div>Быстрая доставка по всему миру</li>
+                        <li>
+                            <div class="icon-container"><img src="img/deliver.png" alt=""></div>Быстрая доставка по всему миру</li>
+                    </ul>
+                    <ul class="language-switcher">
+                        <li class="language-switcher__default-language"><a href="">RU</a>
+                            <ul class="language-switcher__select">
+                                <li><a href="">UA</a></li>
+                                <li><a href="">EN</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
-                <div class="cart-icon">
-                    <a data-fancybox data-src="#open-minicart" href="javascript:;">
-                        <div><span id="kolkorz"> 1</span></div>
-                    </a>
-                </div>
-                <div class="favorites-icon">
-                    <a href="">
-                        <div> <span id="kolwish"> 1</span></div>
-                    </a>
-                </div>
-                <div class="economy-switcher">
-                    <select name="" id="">
-                        <option value="">UAH</option>
-                        <option value="">RUB</option>
-                        <option value="">USD</option>
-                    </select>
+            </div>
+        </nav>
+        </nav>
+        <nav class="header__middle-bar">
+            <div class="wrapper__big">
+                <div class="flex-container">
+                    <div class="logo"><img src="img/logo.png" alt=""></div>
+                    <form action="" class="search-form">
+                        <input type="search" placeholder="Поиск" name="" id="" class="search-form__input"><button type='submit' class="search-form__input__icon"></button>
+                    </form>
+                    <div class="container">
+                        <div class="auth-icons">
+                            <a href="">Вход</a>/<a href="">Регистрация</a>
+
+                            <ul class="auth-dropdown">
+                                <li><a href="">Личный кабинет</a></li>
+                                <li><a href="">Мои заказы</a></li>
+                                <li><a href="">Мои бонусы</a></li>
+                                <li class="logout"><a href="">Выход</a></li>
+                            </ul>
+                        </div>
+                        <div class="cart-icon">
+                            <a href="javascript:;">
+                                <div><span id="kolkorz"> 1</span></div>
+                            </a>
+                        </div>
+                        <div class="favorites-icon">
+                            <a href="">
+                                <div> <span id="kolwish"> 1</span></div>
+                            </a>
+                        </div>
+                        <div class="economy-switcher">
+                            <select name="" id="">
+                            <option value="">UAH</option>
+                            <option value="">RUB</option>
+                            <option value="">USD</option>
+                        </select>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
         <nav class="header__bottom-bar">
-            <div class="wrapper">
+            <div class="wrapper__big">
                 <div class="main-menu">
                     <a href="" class="main-menu__link">Каталог</a>
                     <a href="" class="main-menu__link">Новинки</a>
@@ -86,20 +105,20 @@
         <nav class="mobile-header__top-bar">
             <div class="wrapper">
                 <select name="" id="">
-                    <option value="">UAH</option>
-                    <option value="">RUB</option>
-                    <option value="">USD</option>
-                </select>
+                        <option value="">UAH</option>
+                        <option value="">RUB</option>
+                        <option value="">USD</option>
+                    </select>
                 <ul class="fade slider-bullets">
                     <li class="show">Быстрая доставка по всему ми</li>
                     <li>Быстрая доставка по всему миру</li>
                     <li>Быстрая доставка по всему миру</li>
                 </ul>
                 <select name="" id="">
-                    <option value="">RU</option>
-                    <option value="">EN</option>
-                    <option value="">BL</option>
-                </select>
+                        <option value="">RU</option>
+                        <option value="">EN</option>
+                        <option value="">BL</option>
+                    </select>
             </div>
         </nav>
 
@@ -124,7 +143,7 @@
                             <a href=""></a>
                         </div>
                         <div class="cart-icon">
-                            <a data-fancybox data-src="#open-minicart" href="javascript:;">
+                            <a href="javascript:;">
                                 <div><span id="kolkorz"> 1</span></div>
                             </a>
                         </div>
@@ -175,402 +194,405 @@
             </div>
         </nav>
     </header>
-    <section class="breadcrumbs">
-        <div class="wrapper">
-            <a href="">Главная</a>
-            <span class="separator"> / </span>
-            <a class="disabled">Оформление заказа</a>
+
+<section class="breadcrumbs">
+    <div class="wrapper">
+        <a href="">Главная</a>
+        <span class="separator"> / </span>
+        <a class="disabled">Оформление заказа</a>
+    </div>
+</section>
+<section class="ordering">
+    <div class="wrapper">
+
+
+
+        <div class="column">
+            <h1>Оформление заказа</h1>
+
+            <form action="" class="ordering">
+                <label for="name">ФИО<span>*</span></label>
+                <input type="text" name="fio" id="name" placeholder="ФИО">
+
+
+                <label for="email">Ваш E-mail<span>*</span></label>
+                <input type="email" name="email" id="email" placeholder="ivanov@gmail.com">
+
+                <label for="phone">Телефон<span>*</span></label>
+                <input type="tel" name="" id="name" placeholder="+38 000 000 00 00">
+
+                <label for="country">Страна<span>*</span></label>
+
+
+                <select id="country">
+                            <option value="">Выберите страну</option>
+                            <option value="ukraine">Украина</option>
+                            <option value="russia">Россия</option>
+                            <option value="belorusia">Белоруссия</option>
+                            <option value="kazahstan">Казахстан</option>
+                            <option value="other_country">Другая страна</option>
+                        </select>
+
+
+
+                <div class="form-c ukraine">
+                    <label>Способ доставки<span>*</span></label>
+
+                    <input type="radio" name="delivery_method" id="new-post" class="delivery_method" value="new-post">
+                    <label for="new-post" class="radio">Новая почта - отделение</label>
+                    <div class="sub-text">По тарифам перевозчика
+                        <p class="info-modal" tabindex="0"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia molestiae fugit expedita, corrupti facere veritatis non! </span></p>
+                    </div>
+                    <div class="new-post input">
+                        <label for="city">Город<span>*</span></label>
+                        <input type="text" name="" id="city">
+
+                        <label for="new-post__select ">Отделение<span>*</span></label>
+                        <select name="" id="new-post__select " class="new-post__select">
+                                <option value="">Веберите отделение</option>
+                                <option value="1">1</option>
+                                <option value="2">1</option>
+                                <option value="3">1</option>
+                            </select>
+
+                        <a href="" class="show_on_map">Показать на карте</a>
+                    </div>
+
+                    <input type="radio" name="delivery_method" id="new-post__adress" class="delivery_method" value="new-post__adress">
+                    <label for="new-post__adress" class="radio">Новая почта - курьер</label>
+                    <div class="sub-text">По тарифам перевозчика
+                        <p class="info-modal" tabindex="0"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia molestiae fugit expedita, corrupti facere veritatis non! </span></p>
+                    </div>
+                    <div class="new-post__adress input">
+                        <label for="city">Город<span>*</span></label>
+                        <input type="text" name="" id="city">
+                        <label for="street">Улица<span>*</span></label>
+                        <input type="text" name="" id="street">
+                        <label for="house">Дом<span>*</span></label>
+                        <input type="text" name="" id="house">
+                        <label for="room">Квартира<span>*</span></label>
+                        <input type="text" name="" id="room">
+                    </div>
+
+                    <input type="radio" name="delivery_method" id="ukrpost" value="ukrpost_u">
+                    <label for="ukrpost" class="radio">Укрпочта</label>
+                    <div class="sub-text">По тарифам перевозчика
+                        <p class="info-modal" tabindex="0"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia molestiae fugit expedita, corrupti facere veritatis non! </span></p>
+                    </div>
+                    <div class="ukrpost_u input">
+                        <label for="city">Город<span>*</span></label>
+                        <input type="text" name="" id="city">
+                        <label for="ukrpost__select ">Отделение<span>*</span></label>
+                        <select name="" id="ukrpost__select " class="ukrpost__select">
+                                <option value="">Веберите отделение</option>
+                                <option value="1">1</option>
+                                <option value="2">1</option>
+                                <option value="3">1</option>
+                            </select>
+                        <a href="" class="show_on_map">Показать на карте</a>
+                    </div>
+
+                    <input type="radio" name="delivery_method" id="justin" value="justin">
+                    <label for="justin" class="radio">Justin</label>
+                    <div class="sub-text">По тарифам перевозчика
+                        <p class="info-modal" tabindex="0"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia molestiae fugit expedita, corrupti facere veritatis non! </span></p>
+                    </div>
+                    <div class="justin input">
+                        <label for="city">Город<span>*</span></label>
+                        <input type="text" name="" id="city">
+                        <label for="justin__select ">Отделение<span>*</span></label>
+                        <select name="" id="justin__select " class="justin__select">
+                                <option value="">Веберите отделение</option>
+                                <option value="1">1</option>
+                                <option value="2">1</option>
+                                <option value="3">1</option>
+                            </select>
+                        <a href="" class="show_on_map">Показать на карте</a>
+                    </div>
+
+                    <div class="payments">
+                        <label>Способ оплаты<span>*</span></label>
+
+                        <div class="new-post input justin new-post__adress">
+                            <input type="radio" name="payment-method" id="cod_r" value="cod">
+                            <label for="cod_r" class="radio">Наложенный платеж</label>
+                        </div>
+
+                        <input type="radio" name="payment-method" id="privat24_r">
+                        <label for="privat24_r" class="radio">Приват 24</label>
+
+                        <input type="radio" name="payment-method" id="liqpay_r">
+                        <label for="liqpay_r" class="radio">LiqPay</label>
+
+                        <input type="radio" name="payment-method" id="Visa/Mastercard_r">
+                        <label for="Visa/Mastercard_r" class="radio">Visa / Mastercard</label>
+
+                        <input type="radio" name="payment-method" id="gpay_r">
+                        <label for="gpay_r" class="radio">GooglePay</label>
+
+                        <input type="radio" name="payment-method" id="apple-pay_r">
+                        <label for="apple-pay_r" class="radio">Apple Pay</label>
+
+                        <input type="radio" name="payment-method" id="req_r">
+                        <label for="req_r" class="radio">Оплата по реквизитам</label>
+
+
+
+
+                        <div class="comments">
+                            <label for="comment_u">Комментарий</label>
+
+                            <textarea name="" id="comment_u" cols="30" rows="10"></textarea>
+
+                            <input type="checkbox" name="" id="not-call_u">
+                            <label for="not-call_u" class="checkbox">Не перезванивайте мне</label>
+                        </div>
+                        <button class="btn btn_submit">Оформить заказ</button>
+
+
+                    </div>
+
+                </div>
+
+                <div class="form-c russia">
+                    <label>Способ доставки<span>*</span></label>
+
+                    <input type="radio" name="delivery_method" id="ukrpost_r" value="ukrpost_r">
+                    <label for="ukrpost_r" class="radio">Укрпочта</label>
+                    <div class="sub-text">По тарифам перевозчика
+                        <p class="info-modal" tabindex="0"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia molestiae fugit expedita, corrupti facere veritatis non! </span></p>
+                    </div>
+                    <div class="input ukrpost_r">
+                        <label for="other_name">ФИО<span>*</span></label>
+                        <input type="text" name="" id="other_name">
+                        <label for="city">Город<span>*</span></label>
+                        <input type="text" name="" id="city">
+                        <label for="post_index">Индекс<span>*</span></label>
+                        <input type="text" name="" id="post_index">
+                        <label for="adress">Адрес<span>*</span></label>
+                        <input type="text" name="" id="adress">
+
+                    </div>
+
+                    <div class="payments">
+                        <label>Способ оплаты<span>*</span></label>
+
+                        <input type="radio" name="payment-method" id="Visa/Mastercard_r">
+                        <label for="Visa/Mastercard_r" class="radio">Visa / Mastercard</label>
+
+                        <input type="radio" name="payment-method" id="sberbank_r">
+                        <label for="sberbank_r" class="radio">Оплата на карту Сбербанк России</label>
+
+                        <input type="radio" name="payment-method" id="western_r">
+                        <label for="western_r" class="radio">Western Union</label>
+
+                        <div class="comments">
+                            <label for="comment_r">Комментарий</label>
+
+                            <textarea name="" id="comment_r" cols="30" rows="10"></textarea>
+
+                            <input type="checkbox" name="" id="not-call_r">
+                            <label for="not-call_r" class="checkbox">Не перезванивайте мне</label>
+                        </div>
+                        <button class="btn_submit">Оформить заказ</button>
+                    </div>
+
+                </div>
+
+                <div class="form-c belorusia">
+                    <label>Способ доставки<span>*</span></label>
+
+                    <input type="radio" name="delivery_method" id="ukrpost_bl" value="ukrpost_bl">
+                    <label for="ukrpost_bl" class="radio">Укрпочта</label>
+                    <div class="sub-text">По тарифам перевозчика
+                        <p class="info-modal" tabindex="0"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia molestiae fugit expedita, corrupti facere veritatis non! </span></p>
+                    </div>
+                    <div class="input ukrpost_bl">
+                        <label for="other_name">ФИО<span>*</span></label>
+                        <input type="text" name="" id="other_name">
+                        <label for="city">Город<span>*</span></label>
+                        <input type="text" name="" id="city">
+                        <label for="post_index">Индекс<span>*</span></label>
+                        <input type="text" name="" id="post_index">
+                        <label for="adress">Адрес<span>*</span></label>
+                        <input type="text" name="" id="adress">
+
+                    </div>
+
+                    <div class="payments">
+                        <label>Способ оплаты<span>*</span></label>
+
+                        <input type="radio" name="payment-method" id="Visa/Mastercard_br">
+                        <label for="Visa/Mastercard_br" class="radio">Visa / Mastercard</label>
+
+                        <input type="radio" name="payment-method" id="western_br">
+                        <label for="western_br" class="radio">Western Union</label>
+
+                        <div class="comments">
+                            <label for="comment_bl">Комментарий</label>
+
+                            <textarea name="" id="comment_bl" cols="30" rows="10"></textarea>
+
+                            <input type="checkbox" name="" id="not-call_bl">
+                            <label for="not-call_bl" class="checkbox">Не перезванивайте мне</label>
+                        </div>
+                        <button class="btn_submit">Оформить заказ</button>
+                    </div>
+
+                </div>
+
+                <div class="form-c kazahstan">
+                    <label>Способ доставки<span>*</span></label>
+
+                    <input type="radio" name="delivery_method" id="ukrpost_kz" value="ukrpost_kz">
+                    <label for="ukrpost_kz" class="radio">Укрпочта</label>
+                    <div class="sub-text">По тарифам перевозчика
+                        <p class="info-modal" tabindex="0"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia molestiae fugit expedita, corrupti facere veritatis non! </span></p>
+                    </div>
+                    <div class="input ukrpost_kz">
+                        <label for="other_name">ФИО<span>*</span></label>
+                        <input type="text" name="" id="other_name">
+                        <label for="city">Город<span>*</span></label>
+                        <input type="text" name="" id="city">
+                        <label for="post_index">Индекс<span>*</span></label>
+                        <input type="text" name="" id="post_index">
+                        <label for="adress">Адрес<span>*</span></label>
+                        <input type="text" name="" id="adress">
+
+                    </div>
+
+                    <div class="payments">
+                        <label>Способ оплаты<span>*</span></label>
+
+                        <input type="radio" name="payment-method" id="Visa/Mastercard_kz">
+                        <label for="Visa/Mastercard_kz" class="radio">Visa / Mastercard</label>
+
+                        <input type="radio" name="payment-method" id="western_kz">
+                        <label for="western_kz" class="radio">Western Union</label>
+
+                        <div class="comments">
+                            <label for="comment_kz">Комментарий</label>
+
+                            <textarea name="" id="comment_kz" cols="30" rows="10"></textarea>
+
+                            <input type="checkbox" name="" id="not-call_kz">
+                            <label for="not-call_kz" class="checkbox">Не перезванивайте мне</label>
+                        </div>
+                        <button class="btn_submit btn">Оформить заказ</button>
+                    </div>
+
+                </div>
+
+                <div class="form-c other_country">
+                    <label>Способ доставки<span>*</span></label>
+
+                    <input type="radio" name="delivery_method" id="ukrpost_other" value="ukrpost_other">
+                    <label for="ukrpost_other" class="radio">Укрпочта</label>
+                    <div class="sub-text">По тарифам перевозчика
+                        <p class="info-modal" tabindex="0"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia molestiae fugit expedita, corrupti facere veritatis non! </span></p>
+                    </div>
+                    <div class="input ukrpost_other">
+                        <label for="other_name">ФИО<span>*</span></label>
+                        <input type="text" name="" id="other_name">
+                        <label for="city">Город<span>*</span></label>
+                        <input type="text" name="" id="city">
+                        <label for="post_index">Индекс<span>*</span></label>
+                        <input type="text" name="" id="post_index">
+                        <label for="adress">Адрес<span>*</span></label>
+                        <input type="text" name="" id="adress">
+
+                    </div>
+
+                    <div class="payments">
+                        <label>Способ оплаты<span>*</span></label>
+
+                        <input type="radio" name="payment-method" id="Visa/Mastercard_other">
+                        <label for="Visa/Mastercard_other" class="radio">Visa / Mastercard</label>
+
+                        <input type="radio" name="payment-method" id="western_other">
+                        <label for="western_other" class="radio">Western Union</label>
+
+                        <div class="comments">
+                            <label for="comment_other">Комментарий</label>
+
+                            <textarea name="" id="comment_other" cols="30" rows="10"></textarea>
+
+                            <input type="checkbox" name="" id="not-call_other">
+                            <label for="not-call_other" class="checkbox">Не перезванивайте мне</label>
+                        </div>
+                        <button class="btn_submit btn">Оформить заказ</button>
+                    </div>
+
+                </div>
+
+                <div class="mobile__submit-controller">
+                    <div class="container">
+                        <div class="container-row">
+                            <h4>Стоимость</h4>
+                            <h3>26 999 грн</h3>
+                        </div>
+                        <div class="container-row">
+                            <h4 class="sale-text">Скидка 20%</h4>
+                            <h3>-200 грн</h3>
+                        </div>
+                        <div class="container-row">
+                            <h4>Сумма к оплате</h4>
+                            <h3>800 грн</h3>
+                        </div>
+                        <p>Ваш промокод</p>
+                        <input type="text">
+                        <button class="btn_submit btn">Оформить заказ</button>
+                    </div>
+                </div>
+            </form>
+
         </div>
-    </section>
-    <section class="ordering">
-        <h1 class="title__block">
-            <div class="wrapper">Оформление заказа</div>
 
-        </h1>
-        <div class="wrapper">
-
-            <div class="column">
-
-
-                <form action="" class="ordering">
-                    <label for="name">ФИО<span>*</span></label>
-                    <input type="text" name="fio" id="name" placeholder="ФИО">
-
-
-                    <label for="email">Ваш E-mail<span>*</span></label>
-                    <input type="email" name="email" id="email" placeholder="ivanov@gmail.com">
-
-                    <label for="phone">Телефон<span>*</span></label>
-                    <input type="tel" name="" id="name" placeholder="+38 000 000 00 00">
-
-                    <label for="country">Страна<span>*</span></label>
-                    <select name="" id="country">
-                        <option value="">Выберите страну</option>
-                        <option value="ukraine">Украина</option>
-                        <option value="russia">Россия</option>
-                        <option value="belorusia">Белоруссия</option>
-                        <option value="kazahstan">Казахстан</option>
-                        <option value="other_country">Другая страна</option>
-                    </select>
-
-                    <div class="form-c ukraine">
-                        <label>Способ доставки<span>*</span></label>
-
-                        <input type="radio" name="delivery_method" id="new-post" class="delivery_method" value="new-post">
-                        <label for="new-post" class="radio">Новая почта - отделение</label>
-                        <div class="sub-text">По тарифам перевозчика
-                            <p class="info-modal" tabindex="0"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia molestiae fugit expedita, corrupti facere veritatis non! </span></p>
-                        </div>
-                        <div class="new-post input">
-                            <label for="city">Город<span>*</span></label>
-                            <input type="text" name="" id="city">
-
-                            <label for="new-post__select ">Отделение<span>*</span></label>
-                            <select name="" id="new-post__select " class="new-post__select">
-                                <option value="">Веберите отделение</option>
-                                <option value="1">1</option>
-                                <option value="2">1</option>
-                                <option value="3">1</option>
-                            </select>
-
-                            <a href="" class="show_on_map">Показать на карте</a>
-                        </div>
-
-                        <input type="radio" name="delivery_method" id="new-post__adress" class="delivery_method" value="new-post__adress">
-                        <label for="new-post__adress" class="radio">Новая почта - курьер</label>
-                        <div class="sub-text">По тарифам перевозчика
-                            <p class="info-modal" tabindex="0"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia molestiae fugit expedita, corrupti facere veritatis non! </span></p>
-                        </div>
-                        <div class="new-post__adress input">
-                            <label for="city">Город<span>*</span></label>
-                            <input type="text" name="" id="city">
-                            <label for="street">Улица<span>*</span></label>
-                            <input type="text" name="" id="street">
-                            <label for="house">Дом<span>*</span></label>
-                            <input type="text" name="" id="house">
-                            <label for="room">Квартира<span>*</span></label>
-                            <input type="text" name="" id="room">
-                        </div>
-
-                        <input type="radio" name="delivery_method" id="ukrpost" value="ukrpost_u">
-                        <label for="ukrpost" class="radio">Укрпочта</label>
-                        <div class="sub-text">По тарифам перевозчика
-                            <p class="info-modal" tabindex="0"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia molestiae fugit expedita, corrupti facere veritatis non! </span></p>
-                        </div>
-                        <div class="ukrpost_u input">
-                            <label for="city">Город<span>*</span></label>
-                            <input type="text" name="" id="city">
-                            <label for="ukrpost__select ">Отделение<span>*</span></label>
-                            <select name="" id="ukrpost__select " class="ukrpost__select">
-                                <option value="">Веберите отделение</option>
-                                <option value="1">1</option>
-                                <option value="2">1</option>
-                                <option value="3">1</option>
-                            </select>
-                            <a href="" class="show_on_map">Показать на карте</a>
-                        </div>
-
-                        <input type="radio" name="delivery_method" id="justin" value="justin">
-                        <label for="justin" class="radio">Justin</label>
-                        <div class="sub-text">По тарифам перевозчика
-                            <p class="info-modal" tabindex="0"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia molestiae fugit expedita, corrupti facere veritatis non! </span></p>
-                        </div>
-                        <div class="justin input">
-                            <label for="city">Город<span>*</span></label>
-                            <input type="text" name="" id="city">
-                            <label for="justin__select ">Отделение<span>*</span></label>
-                            <select name="" id="justin__select " class="justin__select">
-                                <option value="">Веберите отделение</option>
-                                <option value="1">1</option>
-                                <option value="2">1</option>
-                                <option value="3">1</option>
-                            </select>
-                            <a href="" class="show_on_map">Показать на карте</a>
-                        </div>
-
-                        <div class="payments">
-                            <label>Способ оплаты<span>*</span></label>
-
-                            <div class="new-post input justin new-post__adress">
-                                <input type="radio" name="payment-method" id="cod_r" value="cod">
-                                <label for="cod_r" class="radio">Наложенный платеж</label>
-                            </div>
-
-                            <input type="radio" name="payment-method" id="privat24_r">
-                            <label for="privat24_r" class="radio">Приват 24</label>
-
-                            <input type="radio" name="payment-method" id="liqpay_r">
-                            <label for="liqpay_r" class="radio">LiqPay</label>
-
-                            <input type="radio" name="payment-method" id="Visa/Mastercard_r">
-                            <label for="Visa/Mastercard_r" class="radio">Visa / Mastercard</label>
-
-                            <input type="radio" name="payment-method" id="gpay_r">
-                            <label for="gpay_r" class="radio">GooglePay</label>
-
-                            <input type="radio" name="payment-method" id="apple-pay_r">
-                            <label for="apple-pay_r" class="radio">Apple Pay</label>
-
-                            <input type="radio" name="payment-method" id="req_r">
-                            <label for="req_r" class="radio">Оплата по реквизитам</label>
-
-
-
-
-                            <div class="comments">
-                                <label for="comment_u">Комментарий</label>
-
-                                <textarea name="" id="comment_u" cols="30" rows="10"></textarea>
-
-                                <input type="checkbox" name="" id="not-call_u">
-                                <label for="not-call_u" class="checkbox">Не перезванивайте мне</label>
-                            </div>
-                            <button class="btn_submit">Оформить заказ</button>
-
-
-                        </div>
-
-                    </div>
-
-                    <div class="form-c russia">
-                        <label>Способ доставки<span>*</span></label>
-
-                        <input type="radio" name="delivery_method" id="ukrpost_r" value="ukrpost_r">
-                        <label for="ukrpost_r" class="radio">Укрпочта</label>
-                        <div class="sub-text">По тарифам перевозчика
-                            <p class="info-modal" tabindex="0"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia molestiae fugit expedita, corrupti facere veritatis non! </span></p>
-                        </div>
-                        <div class="input ukrpost_r">
-                            <label for="other_name">ФИО<span>*</span></label>
-                            <input type="text" name="" id="other_name">
-                            <label for="city">Город<span>*</span></label>
-                            <input type="text" name="" id="city">
-                            <label for="post_index">Индекс<span>*</span></label>
-                            <input type="text" name="" id="post_index">
-                            <label for="adress">Адрес<span>*</span></label>
-                            <input type="text" name="" id="adress">
-
-                        </div>
-
-                        <div class="payments">
-                            <label>Способ оплаты<span>*</span></label>
-
-                            <input type="radio" name="payment-method" id="Visa/Mastercard_r">
-                            <label for="Visa/Mastercard_r" class="radio">Visa / Mastercard</label>
-
-                            <input type="radio" name="payment-method" id="sberbank_r">
-                            <label for="sberbank_r" class="radio">Оплата на карту Сбербанк России</label>
-
-                            <input type="radio" name="payment-method" id="western_r">
-                            <label for="western_r" class="radio">Western Union</label>
-
-                            <div class="comments">
-                                <label for="comment_r">Комментарий</label>
-
-                                <textarea name="" id="comment_r" cols="30" rows="10"></textarea>
-
-                                <input type="checkbox" name="" id="not-call_r">
-                                <label for="not-call_r" class="checkbox">Не перезванивайте мне</label>
-                            </div>
-                            <button class="btn_submit">Оформить заказ</button>
-                        </div>
-
-                    </div>
-
-                    <div class="form-c belorusia">
-                        <label>Способ доставки<span>*</span></label>
-
-                        <input type="radio" name="delivery_method" id="ukrpost_bl" value="ukrpost_bl">
-                        <label for="ukrpost_bl" class="radio">Укрпочта</label>
-                        <div class="sub-text">По тарифам перевозчика
-                            <p class="info-modal" tabindex="0"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia molestiae fugit expedita, corrupti facere veritatis non! </span></p>
-                        </div>
-                        <div class="input ukrpost_bl">
-                            <label for="other_name">ФИО<span>*</span></label>
-                            <input type="text" name="" id="other_name">
-                            <label for="city">Город<span>*</span></label>
-                            <input type="text" name="" id="city">
-                            <label for="post_index">Индекс<span>*</span></label>
-                            <input type="text" name="" id="post_index">
-                            <label for="adress">Адрес<span>*</span></label>
-                            <input type="text" name="" id="adress">
-
-                        </div>
-
-                        <div class="payments">
-                            <label>Способ оплаты<span>*</span></label>
-
-                            <input type="radio" name="payment-method" id="Visa/Mastercard_br">
-                            <label for="Visa/Mastercard_br" class="radio">Visa / Mastercard</label>
-
-                            <input type="radio" name="payment-method" id="western_br">
-                            <label for="western_br" class="radio">Western Union</label>
-
-                            <div class="comments">
-                                <label for="comment_bl">Комментарий</label>
-
-                                <textarea name="" id="comment_bl" cols="30" rows="10"></textarea>
-
-                                <input type="checkbox" name="" id="not-call_bl">
-                                <label for="not-call_bl" class="checkbox">Не перезванивайте мне</label>
-                            </div>
-                            <button class="btn_submit">Оформить заказ</button>
-                        </div>
-
-                    </div>
-
-                    <div class="form-c kazahstan">
-                        <label>Способ доставки<span>*</span></label>
-
-                        <input type="radio" name="delivery_method" id="ukrpost_kz" value="ukrpost_kz">
-                        <label for="ukrpost_kz" class="radio">Укрпочта</label>
-                        <div class="sub-text">По тарифам перевозчика
-                            <p class="info-modal" tabindex="0"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia molestiae fugit expedita, corrupti facere veritatis non! </span></p>
-                        </div>
-                        <div class="input ukrpost_kz">
-                            <label for="other_name">ФИО<span>*</span></label>
-                            <input type="text" name="" id="other_name">
-                            <label for="city">Город<span>*</span></label>
-                            <input type="text" name="" id="city">
-                            <label for="post_index">Индекс<span>*</span></label>
-                            <input type="text" name="" id="post_index">
-                            <label for="adress">Адрес<span>*</span></label>
-                            <input type="text" name="" id="adress">
-
-                        </div>
-
-                        <div class="payments">
-                            <label>Способ оплаты<span>*</span></label>
-
-                            <input type="radio" name="payment-method" id="Visa/Mastercard_kz">
-                            <label for="Visa/Mastercard_kz" class="radio">Visa / Mastercard</label>
-
-                            <input type="radio" name="payment-method" id="western_kz">
-                            <label for="western_kz" class="radio">Western Union</label>
-
-                            <div class="comments">
-                                <label for="comment_kz">Комментарий</label>
-
-                                <textarea name="" id="comment_kz" cols="30" rows="10"></textarea>
-
-                                <input type="checkbox" name="" id="not-call_kz">
-                                <label for="not-call_kz" class="checkbox">Не перезванивайте мне</label>
-                            </div>
-                            <button class="btn_submit">Оформить заказ</button>
-                        </div>
-
-                    </div>
-
-                    <div class="form-c other_country">
-                        <label>Способ доставки<span>*</span></label>
-
-                        <input type="radio" name="delivery_method" id="ukrpost_other" value="ukrpost_other">
-                        <label for="ukrpost_other" class="radio">Укрпочта</label>
-                        <div class="sub-text">По тарифам перевозчика
-                            <p class="info-modal" tabindex="0"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia molestiae fugit expedita, corrupti facere veritatis non! </span></p>
-                        </div>
-                        <div class="input ukrpost_other">
-                            <label for="other_name">ФИО<span>*</span></label>
-                            <input type="text" name="" id="other_name">
-                            <label for="city">Город<span>*</span></label>
-                            <input type="text" name="" id="city">
-                            <label for="post_index">Индекс<span>*</span></label>
-                            <input type="text" name="" id="post_index">
-                            <label for="adress">Адрес<span>*</span></label>
-                            <input type="text" name="" id="adress">
-
-                        </div>
-
-                        <div class="payments">
-                            <label>Способ оплаты<span>*</span></label>
-
-                            <input type="radio" name="payment-method" id="Visa/Mastercard_other">
-                            <label for="Visa/Mastercard_other" class="radio">Visa / Mastercard</label>
-
-                            <input type="radio" name="payment-method" id="western_other">
-                            <label for="western_other" class="radio">Western Union</label>
-
-                            <div class="comments">
-                                <label for="comment_other">Комментарий</label>
-
-                                <textarea name="" id="comment_other" cols="30" rows="10"></textarea>
-
-                                <input type="checkbox" name="" id="not-call_other">
-                                <label for="not-call_other" class="checkbox">Не перезванивайте мне</label>
-                            </div>
-                            <button class="btn_submit">Оформить заказ</button>
-                        </div>
-
-                    </div>
-
-                    <div class="mobile__submit-controller">
+        <div class="column">
+            <div class="cart-box">
+                <div class="cart-box__header">
+                    <h1>Ваш заказ</h1>
+                </div>
+                <div class="cart-box__order-list ">
+                    <div class="empty-cart-frame">
                         <div class="container">
-                            <div class="container-row">
-                                <h4>Стоимость</h4>
-                                <h3>26 999 грн</h3>
-                            </div>
-                            <div class="container-row">
-                                <h4 class="sale-text">Скидка 20%</h4>
-                                <h3>-200 грн</h3>
-                            </div>
-                            <div class="container-row">
-                                <h4>Сумма к оплате</h4>
-                                <h3>800 грн</h3>
-                            </div>
-                            <p>Ваш промокод</p>
-                            <input type="text">
-                            <button class="btn_submit">Оформить заказ</button>
+                            <img src="img/cart-big.svg" alt="">
+                            <h5>Ваша корзина пуста</h5>
+                            <p>Добавьте товары чтобы это исправить</p>
+                            <a href="" class="btn">Начать покупки</a>
                         </div>
                     </div>
-                </form>
 
-            </div>
-
-            <div class="column">
-                <div class="cart-box">
-                    <div class="cart-box__header">
-                        <h1>Ваш заказ</h1>
+                </div>
+                <a href="" class="cart-box_edit-cart">Редактировать</a>
+                <div class="cart-box__footer">
+                    <div class="cart-box__footer__row">
+                        <h2>Общая стоимость:</h2>
+                        <h2 class="all_sum">0 грн</h2>
                     </div>
-                    <div class="cart-box__order-list ">
-                        <div class="empty-cart-frame">
-                            <div class="container">
-                                <img src="img/cart-big.svg" alt="">
-                                <h5>Ваша корзина пуста</h5>
-                                <p>Добавьте товары чтобы это исправить</p>
-                                <a href="" class="btn">Начать покупки</a>
-                            </div>
-                        </div>
-
+                    <div class="cart-box__footer__row">
+                        <h2>Cкидка:</h2>
+                        <h2 class="discount_size">0 грн</h2>
                     </div>
-                    <a href="" class="cart-box_edit-cart">Редактировать</a>
-                    <div class="cart-box__footer">
-                        <div class="cart-box__footer__row">
-                            <h2>Общая стоимость:</h2>
-                            <h2 class="all_sum">0 грн</h2>
-                        </div>
-                        <div class="cart-box__footer__row">
-                            <h2>Cкидка:</h2>
-                            <h2 class="discount_size">0 грн</h2>
-                        </div>
-                        <div class="cart-box__footer__row">
-                            <h2>Сумма к оплате:</h2>
-                            <h2 class="sum_for_pay"> 0 грн</h2>
-                        </div>
+                    <div class="cart-box__footer__row">
+                        <h2>Сумма к оплате:</h2>
+                        <h2 class="sum_for_pay"> 0 грн</h2>
+                    </div>
 
 
-                        <div class="cart-box__footer__promo">
-                            <h3>Ваш промокод</h3>
-                            <div class="cart-box__footer__row">
-                                <input type="text" name="" id="" class="promo-input">
-                                <button type="submit" class="btn">Применить</button>
-                            </div>
+                    <div class="cart-box__footer__promo">
+                        <h3>Ваш промокод</h3>
+                        <div class="cart-box__footer__row">
+                            <input type="text" name="" id="" class="promo-input">
+                            <button type="submit" class="btn">Применить</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <footer>
+    </div>
+</section>
+<footer>
     <div class="wrapper">
         <div class="column">
             <h4 class="footer__title footer-has-drop">Оптовым клиентам</h4>
@@ -633,23 +655,32 @@
     </div>
     <a id="button_go-up"><img src="img/ar-top.png" alt=""></a>
 </footer>
-<div class="minicart" style="display: none" id="open-minicart">
+<div class="minicart" id="open-minicart">
     <div class="minicart_header">
         <h1>Корзина</h1>
+        <span class="close-btn"></span>
     </div>
-
     <div class="minicart_scrolled-container">
-
-    </div>
-
-    <div class="minicart-footer">
-        <div class="column"><a href="" class="btn">Продолжить покупки</a></div>
-        <div class="column">
-            <div class="price-container">
-                <p><strong>(<span>2</span> товара)</strong> на общую стоимость:</p>
-                <h1>26 782 грн</h1>
+        <div class="empty-cart-frame">
+            <div class="container">
+                <img src="img/cart-big.svg" alt="">
+                <h5>Ваша корзина пуста</h5>
+                <p>Добавьте товары чтобы это исправить</p>
+                <a href="/" class="btn">Начать покупки</a>
             </div>
-            <a href="" class="btn">Оформить заказ</a>
+        </div>
+    </div>
+    <div class="minicart-footer">
+        <div class="sum-of-order">
+            <h4>Сумма заказа:<span>0 UAH</span></h4>
+            <p>Количество товара: <span>0</span> шт</p>
+        </div>
+        <div class="minicart-control">
+            <a href="/checkout" class="btn">Оформить заказ</a>
+            <div class="flex-container">
+                <a href="" class="link">Продолжить покупки</a>
+                <a href="" class="btn">Купить в 1 клик</a>
+            </div>
         </div>
     </div>
 </div>
@@ -788,8 +819,10 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="js/app.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.0-rc.2/jquery-ui.min.js" integrity="sha256-RQLbEU539dpygNMsBGZlplus6CkitaLy0btTCHcULpI=" crossorigin="anonymous"></script>
 <script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/app.min.js"></script>
+
 </body>
 
 </html>

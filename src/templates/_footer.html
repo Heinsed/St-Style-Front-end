@@ -61,23 +61,32 @@
     </div>
     <a id="button_go-up"><img src="img/ar-top.png" alt=""></a>
 </footer>
-<div class="minicart" style="display: none" id="open-minicart">
+<div class="minicart" id="open-minicart">
     <div class="minicart_header">
         <h1>Корзина</h1>
+        <span class="close-btn"></span>
     </div>
-
     <div class="minicart_scrolled-container">
-
-    </div>
-
-    <div class="minicart-footer">
-        <div class="column"><a href="" class="btn">Продолжить покупки</a></div>
-        <div class="column">
-            <div class="price-container">
-                <p><strong>(<span>2</span> товара)</strong> на общую стоимость:</p>
-                <h1>26 782 грн</h1>
+        <div class="empty-cart-frame">
+            <div class="container">
+                <img src="img/cart-big.svg" alt="">
+                <h5>Ваша корзина пуста</h5>
+                <p>Добавьте товары чтобы это исправить</p>
+                <a href="/" class="btn">Начать покупки</a>
             </div>
-            <a href="" class="btn">Оформить заказ</a>
+        </div>
+    </div>
+    <div class="minicart-footer">
+        <div class="sum-of-order">
+            <h4>Сумма заказа:<span>0 UAH</span></h4>
+            <p>Количество товара: <span>0</span> шт</p>
+        </div>
+        <div class="minicart-control">
+            <a href="/checkout" class="btn">Оформить заказ</a>
+            <div class="flex-container">
+                <a href="" class="link">Продолжить покупки</a>
+                <a href="" class="btn">Купить в 1 клик</a>
+            </div>
         </div>
     </div>
 </div>
@@ -216,8 +225,10 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="js/app.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.0-rc.2/jquery-ui.min.js" integrity="sha256-RQLbEU539dpygNMsBGZlplus6CkitaLy0btTCHcULpI=" crossorigin="anonymous"></script>
 <script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/app.min.js"></script>
+
 </body>
 
 </html>

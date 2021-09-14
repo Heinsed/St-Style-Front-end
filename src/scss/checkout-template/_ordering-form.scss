@@ -1,0 +1,84 @@
+.department_check {
+    border: 1px solid rgb(219, 219, 219) !important;
+}
+
+.payments {
+    display: none;
+}
+
+.input,
+.form-c {
+    display: none;
+    width: 0px;
+    height: 0px;
+}
+
+.visible-form {
+    display: block;
+    width: auto;
+    height: auto;
+    position: relative;
+    transition: 0.1s;
+}
+
+.mobile__submit-controller {
+    display: none;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid $elements-color;
+    box-sizing: border-box;
+    .container {
+        padding: 12px 15px;
+        box-sizing: border-box;
+        p {
+            font-size: 12px;
+            font-weight: 500;
+            color: $main-font-color;
+            opacity: 1;
+            margin-bottom: 12px;
+        }
+        input {
+            height: 55px;
+            line-height: 55px;
+            border: 1px dashed $main-color !important;
+            box-sizing: border-box;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            @media screen and (max-width: 350px) {
+                font-size: 12px;
+                height: 36px;
+            }
+        }
+    }
+    .container-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 14px;
+        h4 {
+            font-size: 14px;
+            color: $main-font-color;
+            font-weight: 400;
+            &.sale-text {
+                font-weight: 200;
+            }
+        }
+        h3 {
+            text-align: left;
+            width: 100px;
+            font-size: 18px;
+            color: $main-font-color;
+            font-weight: 500;
+        }
+    }
+    @media screen and (max-width: 1111px) {
+        display: none;
+    }
+    .btn_submit {
+        display: block;
+        height: 55px;
+        @media screen and (max-width: 350px) {
+            font-size: 12px;
+            height: 36px;
+        }
+    }
+}

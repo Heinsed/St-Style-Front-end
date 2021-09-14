@@ -10,6 +10,187 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>ST-Style</title>
+
+
+
+
+
+
 </head>
 
 <body>
+
+
+    <header class="desktop-header">
+        <nav class="header__top-bar">
+            <div class="wrapper__big">
+                <div class="flex-container">
+
+
+                    <ul>
+                        <li>
+                            <div class="icon-container"><img src="img/deliver.png" alt=""></div>Быстрая доставка по всему миру</li>
+                        <li>
+                            <div class="icon-container"><img src="img/deliver.png" alt=""></div>Быстрая доставка по всему миру</li>
+                        <li>
+                            <div class="icon-container"><img src="img/deliver.png" alt=""></div>Быстрая доставка по всему миру</li>
+                    </ul>
+                    <ul class="language-switcher">
+                        <li class="language-switcher__default-language"><a href="">RU</a>
+                            <ul class="language-switcher__select">
+                                <li><a href="">UA</a></li>
+                                <li><a href="">EN</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        </nav>
+        <nav class="header__middle-bar">
+            <div class="wrapper__big">
+                <div class="flex-container">
+                    <div class="logo"><img src="img/logo.png" alt=""></div>
+                    <form action="" class="search-form">
+                        <input type="search" placeholder="Поиск" name="" id="" class="search-form__input"><button type='submit' class="search-form__input__icon"></button>
+                    </form>
+                    <div class="container">
+                        <div class="auth-icons">
+                            <a href="">Вход</a>/<a href="">Регистрация</a>
+
+                            <ul class="auth-dropdown">
+                                <li><a href="">Личный кабинет</a></li>
+                                <li><a href="">Мои заказы</a></li>
+                                <li><a href="">Мои бонусы</a></li>
+                                <li class="logout"><a href="">Выход</a></li>
+                            </ul>
+                        </div>
+                        <div class="cart-icon">
+                            <a href="javascript:;">
+                                <div><span id="kolkorz"> 1</span></div>
+                            </a>
+                        </div>
+                        <div class="favorites-icon">
+                            <a href="">
+                                <div> <span id="kolwish"> 1</span></div>
+                            </a>
+                        </div>
+                        <div class="economy-switcher">
+                            <select name="" id="">
+                            <option value="">UAH</option>
+                            <option value="">RUB</option>
+                            <option value="">USD</option>
+                        </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="header__bottom-bar">
+            <div class="wrapper__big">
+                <div class="main-menu">
+                    <a href="" class="main-menu__link">Каталог</a>
+                    <a href="" class="main-menu__link">Новинки</a>
+                    <!-- <a href="" class="main-menu__link">Новогоднее</a> -->
+                    <a href="" class="main-menu__link">Маленькие размеры</a>
+                    <a href="" class="main-menu__link">Размеры норма</a>
+                    <a href="" class="main-menu__link">Размеры 48+</a>
+                    <a href="" class="main-menu__link allocated">%Sale</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <header class="mobile-header">
+        <nav class="mobile-header__top-bar">
+            <div class="wrapper">
+                <select name="" id="">
+                        <option value="">UAH</option>
+                        <option value="">RUB</option>
+                        <option value="">USD</option>
+                    </select>
+                <ul class="fade slider-bullets">
+                    <li class="show">Быстрая доставка по всему ми</li>
+                    <li>Быстрая доставка по всему миру</li>
+                    <li>Быстрая доставка по всему миру</li>
+                </ul>
+                <select name="" id="">
+                        <option value="">RU</option>
+                        <option value="">EN</option>
+                        <option value="">BL</option>
+                    </select>
+            </div>
+        </nav>
+
+        <nav class="mobile-header__middle-bar">
+            <div class="wrapper">
+                <div class="first-container">
+                    <div class="wrap">
+                        <div class="burger ">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="favorites-icon">
+                            <a href="">
+                                <div><span id="kolwish"> 1</span></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="logo"><img src="img/logo.png" alt=""></div>
+                    <div class="wrap">
+                        <div class="auth-icons">
+                            <a href=""></a>
+                        </div>
+                        <div class="cart-icon">
+                            <a href="javascript:;">
+                                <div><span id="kolkorz"> 1</span></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay"></div>
+            <div class="mobile-menu">
+
+                <div class="container">
+                    <a href="" class="back-link">Назад</a>
+
+                    <ul>
+                        <li class="has-dropdown">Каталог
+                            <ul>
+                                <li><a href="">Платья</a></li>
+                                <li><a href="">Топы</a></li>
+                                <li><a href="">Брюки</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-dropdown">Новинки
+                            <ul>
+                                <li><a href="">Платья</a></li>
+                                <li><a href="">Топы</a></li>
+                                <li><a href="">Брюки</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Новогодние</a></li>
+                        <li><a href="">Маленькие размеры</a></li>
+                        <li><a href="">Размеры норма</a></li>
+                        <li><a href="">Размеры 48+</a></li>
+                        <li class="sale_link"><a href="">%SALE</a></li>
+                    </ul>
+
+                    <ul class="login_menu">
+                        <li><a href="">Личный кабинет</a></li>
+                        <li><a href="">Моя корзина</a></li>
+                    </ul>
+
+                    <div class="contacts">
+                        <h4>Контакты</h4>
+                        <a href="tel:+38 095 777 10 72" class="phone">+38 095 777 10 72</a>
+                        <a href="tel:+38 095 777 10 72" class="phone">+38 095 777 10 72</a>
+                        <a href="mailto:sale@st-style.com.ua" class="email">sale@st-style.com.ua</a>
+                        <p class="worktime">Пн-Сб (10:00 - 19:00)</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
