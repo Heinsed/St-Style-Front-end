@@ -273,6 +273,24 @@ input[type="radio"]:checked+label:before {
     }
 }
 
+.breadcrumbs {
+    margin-bottom: 40px;
+    a,
+    span {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        color: $main-font-color;
+        opacity: 0.3;
+        &:last-child {
+            cursor: default;
+            pointer-events: none;
+        }
+    }
+}
+
 // ELEMENTS END
 .minicart {
     padding: 0 !important;
