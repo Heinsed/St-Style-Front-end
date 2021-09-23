@@ -1,0 +1,39 @@
+.product__slider {
+    width: 70%;
+    overflow: hidden;
+    max-width: 1125px;
+    height: 45vh;
+    display: flex;
+    max-height: 695px;
+    .slider-nav {
+        height: 45vh;
+        margin-right: 100px;
+        width: 100px;
+        li {
+            width: 100px;
+            overflow: hidden;
+            height: 158px;
+            margin-bottom: 20px;
+            cursor: pointer;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    .slider-for {
+        max-width: 929px;
+        max-height: 695px;
+        li {
+            height: 100%;
+            max-width: 465px;
+            cursor: pointer;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

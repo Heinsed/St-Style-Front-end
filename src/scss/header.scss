@@ -11,14 +11,6 @@ header {
             display: none;
         }
     }
-    .wrapper__big {
-        max-width: 1640px;
-        margin: 0 auto;
-        height: 100%;
-        @media screen and (max-width: 1700px) {
-            margin: 0 3%;
-        }
-    }
     .header__top-bar {
         background: $main-color;
         color: #fff;
@@ -125,7 +117,7 @@ header {
             align-items: center;
             height: 100%;
             .container {
-                width: 30%;
+                width: 40%;
                 display: flex;
                 align-items: center;
                 height: 100%;
@@ -305,7 +297,7 @@ header {
             height: 100%;
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: space-around;
             a {
                 font-family: Montserrat;
                 font-style: normal;

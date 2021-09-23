@@ -1,24 +1,26 @@
-.department_check {
-    border: 1px solid rgb(219, 219, 219) !important;
-}
-
-.payments {
-    display: none;
-}
-
-.input,
-.form-c {
-    display: none;
-    width: 0px;
-    height: 0px;
-}
-
-.visible-form {
-    display: block;
-    width: auto;
-    height: auto;
-    position: relative;
-    transition: 0.1s;
+.oredering {
+    .department_check {
+        border: 1px solid rgb(219, 219, 219) !important;
+    }
+    .payments {
+        display: none;
+    }
+    .input,
+    .form-c {
+        display: none;
+        width: 0px;
+        height: 0px;
+    }
+    .visible-form {
+        display: block;
+        width: auto;
+        height: auto;
+        position: relative;
+        transition: 0.1s;
+    }
+    input {
+        margin-bottom: 28px;
+    }
 }
 
 .mobile__submit-controller {

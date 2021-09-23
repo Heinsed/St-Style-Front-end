@@ -303,3 +303,70 @@ $('.cart-icon a').click(function() {
 $('.minicart .close-btn').click(function() {
     $('.minicart').toggleClass('visible');
 });
+
+$('#product-slider_for').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    focusOnSelect: true,
+    arrows: false,
+    draggable: true,
+    asNavFor: '#product-slider_nav',
+    variableWidth: true
+});
+$('#product-slider_nav').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    asNavFor: '#product-slider_for',
+    draggable: true,
+    focusOnSelect: true,
+    vertical: true,
+    arrows: false,
+
+});
+
+$('.size label').click(function() {
+    $(this).parents('.size').toggleClass('toggled');
+});
+
+$('#size-plus').click(function() {
+    // ОБРАБОТЧИК УВЕЛИЧЕНИЯ КОЛ-ВА ТОВАРА
+})
+
+$('#size-minus').click(function() {
+    // ОБРАБОТЧИК УМЕНЬШЕНИЯ КОЛ-ВА ТОВАРА
+})
+
+$('#add-to-wish').click(function() {
+    $(this).toggleClass('active');
+})
+
+$('#buy-in-one-click').click(function() {
+    if ($(this).parent('.buy-in-one-click').hasClass('active')) {
+        return false;
+    } else {
+        $(this).parent('.buy-in-one-click').addClass('active');
+    }
+});
+
+$('#add-to-cart').click(function() {
+    if ($(this).hasClass('added')) {
+        $('.minicart').addClass('visible');
+
+        return false;
+
+    } else {
+        $(this).text('Добавлено в корзину');
+        $(this).addClass('added');
+    }
+
+});
+
+
+$('#product__slider-colors').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: $('#product__slider-color-prev'),
+    nextArrow: $('#product__slider-color-next'),
+    infinite: false
+})

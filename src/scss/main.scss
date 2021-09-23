@@ -16,6 +16,17 @@ body {
 .wrapper {
     max-width: 1110px;
     margin: 0 auto;
+    height: 100%;
+}
+
+.wrapper__big {
+    max-width: 1768px;
+    margin: 0 auto;
+    height: 100%;
+    @media screen and (max-width: 1800px) {
+        margin: 0 3%;
+    }
 }
 
 @import 'checkout-template/main';
+@import 'product-template/main';
