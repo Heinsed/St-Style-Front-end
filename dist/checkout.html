@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>ST-Style</title>
 
-
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
 
 
@@ -206,7 +206,7 @@
 <section class="ordering">
     <div class="wrapper">
 
-        <div class="flex-container">
+        <div class="flex-container s-b">
 
             <div class="column">
                 <h1>Оформление заказа</h1>
@@ -224,8 +224,8 @@
 
                     <label for="country">Страна<span>*</span></label>
 
-
-                    <select id="country">
+                    <div class="custom-select">
+                        <select id="country">
                             <option value="">Выберите страну</option>
                             <option value="ukraine">Украина</option>
                             <option value="russia">Россия</option>
@@ -233,6 +233,14 @@
                             <option value="kazahstan">Казахстан</option>
                             <option value="other_country">Другая страна</option>
                         </select>
+                        <div class="select-bar">
+                            Выберите вариант
+                        </div>
+                        <div class="select-list">
+
+                        </div>
+                    </div>
+
 
 
 
@@ -241,8 +249,11 @@
 
                         <input type="radio" name="delivery_method" id="new-post" class="delivery_method" value="new-post">
                         <label for="new-post" class="radio">Новая почта - отделение</label>
-                        <div class="sub-text">По тарифам перевозчика
-                            <p class="info-modal" tabindex="0"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia molestiae fugit expedita, corrupti facere veritatis non! </span></p>
+                        <div class="sub-text flex-container s-b">
+                            <p>По тарифам перевозчика</p>
+                            <div class="tooltip">
+                                <p> Модное летнее платье на пуговицах – прекрасное решение для нежного незабываемого образа в стиле шик casual. Модель полуприлегающего силуэта, длиной миди, дополнена изящным тонким пояском, подчеркивающим линию талии.</p>
+                            </div>
                         </div>
                         <div class="new-post input">
                             <label for="city">Город<span>*</span></label>
@@ -261,8 +272,11 @@
 
                         <input type="radio" name="delivery_method" id="new-post__adress" class="delivery_method" value="new-post__adress">
                         <label for="new-post__adress" class="radio">Новая почта - курьер</label>
-                        <div class="sub-text">По тарифам перевозчика
-                            <p class="info-modal" tabindex="0"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia molestiae fugit expedita, corrupti facere veritatis non! </span></p>
+                        <div class="sub-text flex-container s-b">
+                            <p>По тарифам перевозчика</p>
+                            <div class="tooltip">
+                                <p> Модное летнее платье на пуговицах – прекрасное решение для нежного незабываемого образа в стиле шик casual. Модель полуприлегающего силуэта, длиной миди, дополнена изящным тонким пояском, подчеркивающим линию талии.</p>
+                            </div>
                         </div>
                         <div class="new-post__adress input">
                             <label for="city">Город<span>*</span></label>
@@ -277,8 +291,11 @@
 
                         <input type="radio" name="delivery_method" id="ukrpost" value="ukrpost_u">
                         <label for="ukrpost" class="radio">Укрпочта</label>
-                        <div class="sub-text">По тарифам перевозчика
-                            <p class="info-modal" tabindex="0"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia molestiae fugit expedita, corrupti facere veritatis non! </span></p>
+                        <div class="sub-text flex-container s-b">
+                            <p>По тарифам перевозчика</p>
+                            <div class="tooltip">
+                                <p> Модное летнее платье на пуговицах – прекрасное решение для нежного незабываемого образа в стиле шик casual. Модель полуприлегающего силуэта, длиной миди, дополнена изящным тонким пояском, подчеркивающим линию талии.</p>
+                            </div>
                         </div>
                         <div class="ukrpost_u input">
                             <label for="city">Город<span>*</span></label>
@@ -295,8 +312,11 @@
 
                         <input type="radio" name="delivery_method" id="justin" value="justin">
                         <label for="justin" class="radio">Justin</label>
-                        <div class="sub-text">По тарифам перевозчика
-                            <p class="info-modal" tabindex="0"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia molestiae fugit expedita, corrupti facere veritatis non! </span></p>
+                        <div class="sub-text flex-container s-b">
+                            <p>По тарифам перевозчика</p>
+                            <div class="tooltip">
+                                <p> Модное летнее платье на пуговицах – прекрасное решение для нежного незабываемого образа в стиле шик casual. Модель полуприлегающего силуэта, длиной миди, дополнена изящным тонким пояском, подчеркивающим линию талии.</p>
+                            </div>
                         </div>
                         <div class="justin input">
                             <label for="city">Город<span>*</span></label>
@@ -313,29 +333,74 @@
 
                         <div class="payments">
                             <label>Способ оплаты<span>*</span></label>
-
-                            <div class="new-post input justin new-post__adress">
-                                <input type="radio" name="payment-method" id="cod_r" value="cod">
-                                <label for="cod_r" class="radio">Наложенный платеж</label>
+                            <div class="flex-container s-b">
+                                <input type="radio" name="payment-method" id="cod_u" value="cod">
+                                <label for="cod_u" class="radio">Наложенный платеж</label>
+                                <p>0%</p>
+                                <div class="tooltip">
+                                    <p> Модное летнее платье на пуговицах – прекрасное решение для нежного незабываемого образа в стиле шик casual. Модель полуприлегающего силуэта, длиной миди, дополнена изящным тонким пояском, подчеркивающим линию талии.</p>
+                                </div>
                             </div>
 
-                            <input type="radio" name="payment-method" id="privat24_r">
-                            <label for="privat24_r" class="radio">Приват 24</label>
+                            <div class="flex-container s-b">
+                                <input type="radio" name="payment-method" id="privat24_r">
+                                <label for="privat24_r" class="radio">Приват 24</label>
+                                <p>0%</p>
+                                <div class="tooltip">
+                                    <p> Модное летнее платье на пуговицах – прекрасное решение для нежного незабываемого образа в стиле шик casual. Модель полуприлегающего силуэта, длиной миди, дополнена изящным тонким пояском, подчеркивающим линию талии.</p>
+                                </div>
+                            </div>
+                            <div class="flex-container s-b">
+                                <input type="radio" name="payment-method" id="liqpay_r">
+                                <label for="liqpay_r" class="radio">LiqPay</label>
+                                <p>0%</p>
+                                <div class="tooltip">
+                                    <p> Модное летнее платье на пуговицах – прекрасное решение для нежного незабываемого образа в стиле шик casual. Модель полуприлегающего силуэта, длиной миди, дополнена изящным тонким пояском, подчеркивающим линию талии.</p>
+                                </div>
+                            </div>
+                            <div class="flex-container s-b">
+                                <input type="radio" name="payment-method" id="Visa/Mastercard_r">
+                                <label for="Visa/Mastercard_r" class="radio">Visa / Mastercard</label>
+                                <p>5% - 10%</p>
+                                <div class="tooltip">
+                                    <p> Модное летнее платье на пуговицах – прекрасное решение для нежного незабываемого образа в стиле шик casual. Модель полуприлегающего силуэта, длиной миди, дополнена изящным тонким пояском, подчеркивающим линию талии.</p>
+                                </div>
+                            </div>
+                            <div class="flex-container s-b">
 
-                            <input type="radio" name="payment-method" id="liqpay_r">
-                            <label for="liqpay_r" class="radio">LiqPay</label>
+                                <input type="radio" name="payment-method" id="gpay_r">
+                                <label for="gpay_r" class="radio">GooglePay</label>
+                                <p>0%</p>
+                                <div class="tooltip">
+                                    <p> Модное летнее платье на пуговицах – прекрасное решение для нежного незабываемого образа в стиле шик casual. Модель полуприлегающего силуэта, длиной миди, дополнена изящным тонким пояском, подчеркивающим линию талии.</p>
+                                </div>
+                            </div>
+                            <div class="flex-container s-b">
+                                <input type="radio" name="payment-method" id="apple-pay_r">
+                                <label for="apple-pay_r" class="radio">Apple Pay</label>
+                                <p>0%</p>
+                                <div class="tooltip">
+                                    <p> Модное летнее платье на пуговицах – прекрасное решение для нежного незабываемого образа в стиле шик casual. Модель полуприлегающего силуэта, длиной миди, дополнена изящным тонким пояском, подчеркивающим линию талии.</p>
+                                </div>
+                            </div>
+                            <div class="flex-container s-b">
+                                <input type="radio" name="payment-method" id="req_r">
+                                <label for="req_r" class="radio">Оплата по реквизитам</label>
+                                <p>0%</p>
+                                <div class="tooltip">
+                                    <p> Модное летнее платье на пуговицах – прекрасное решение для нежного незабываемого образа в стиле шик casual. Модель полуприлегающего силуэта, длиной миди, дополнена изящным тонким пояском, подчеркивающим линию талии.</p>
+                                </div>
+                            </div>
 
-                            <input type="radio" name="payment-method" id="Visa/Mastercard_r">
-                            <label for="Visa/Mastercard_r" class="radio">Visa / Mastercard</label>
 
-                            <input type="radio" name="payment-method" id="gpay_r">
-                            <label for="gpay_r" class="radio">GooglePay</label>
 
-                            <input type="radio" name="payment-method" id="apple-pay_r">
-                            <label for="apple-pay_r" class="radio">Apple Pay</label>
 
-                            <input type="radio" name="payment-method" id="req_r">
-                            <label for="req_r" class="radio">Оплата по реквизитам</label>
+
+
+
+
+
+
 
 
 
@@ -360,8 +425,11 @@
 
                         <input type="radio" name="delivery_method" id="ukrpost_r" value="ukrpost_r">
                         <label for="ukrpost_r" class="radio">Укрпочта</label>
-                        <div class="sub-text">По тарифам перевозчика
-                            <p class="info-modal" tabindex="0"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia molestiae fugit expedita, corrupti facere veritatis non! </span></p>
+                        <div class="sub-text flex-container s-b">
+                            <p>По тарифам перевозчика</p>
+                            <div class="tooltip">
+                                <p> Модное летнее платье на пуговицах – прекрасное решение для нежного незабываемого образа в стиле шик casual. Модель полуприлегающего силуэта, длиной миди, дополнена изящным тонким пояском, подчеркивающим линию талии.</p>
+                            </div>
                         </div>
                         <div class="input ukrpost_r">
                             <label for="other_name">ФИО<span>*</span></label>
@@ -405,8 +473,11 @@
 
                         <input type="radio" name="delivery_method" id="ukrpost_bl" value="ukrpost_bl">
                         <label for="ukrpost_bl" class="radio">Укрпочта</label>
-                        <div class="sub-text">По тарифам перевозчика
-                            <p class="info-modal" tabindex="0"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia molestiae fugit expedita, corrupti facere veritatis non! </span></p>
+                        <div class="sub-text flex-container s-b">
+                            <p>По тарифам перевозчика</p>
+                            <div class="tooltip">
+                                <p> Модное летнее платье на пуговицах – прекрасное решение для нежного незабываемого образа в стиле шик casual. Модель полуприлегающего силуэта, длиной миди, дополнена изящным тонким пояском, подчеркивающим линию талии.</p>
+                            </div>
                         </div>
                         <div class="input ukrpost_bl">
                             <label for="other_name">ФИО<span>*</span></label>
@@ -447,8 +518,11 @@
 
                         <input type="radio" name="delivery_method" id="ukrpost_kz" value="ukrpost_kz">
                         <label for="ukrpost_kz" class="radio">Укрпочта</label>
-                        <div class="sub-text">По тарифам перевозчика
-                            <p class="info-modal" tabindex="0"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia molestiae fugit expedita, corrupti facere veritatis non! </span></p>
+                        <div class="sub-text flex-container s-b">
+                            <p>По тарифам перевозчика</p>
+                            <div class="tooltip">
+                                <p> Модное летнее платье на пуговицах – прекрасное решение для нежного незабываемого образа в стиле шик casual. Модель полуприлегающего силуэта, длиной миди, дополнена изящным тонким пояском, подчеркивающим линию талии.</p>
+                            </div>
                         </div>
                         <div class="input ukrpost_kz">
                             <label for="other_name">ФИО<span>*</span></label>
@@ -489,8 +563,10 @@
 
                         <input type="radio" name="delivery_method" id="ukrpost_other" value="ukrpost_other">
                         <label for="ukrpost_other" class="radio">Укрпочта</label>
-                        <div class="sub-text">По тарифам перевозчика
-                            <p class="info-modal" tabindex="0"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia molestiae fugit expedita, corrupti facere veritatis non! </span></p>
+                        <div class="sub-text flex-container s-b">По тарифам перевозчика
+                            <div class="tooltip">
+                                <p> Модное летнее платье на пуговицах – прекрасное решение для нежного незабываемого образа в стиле шик casual. Модель полуприлегающего силуэта, длиной миди, дополнена изящным тонким пояском, подчеркивающим линию талии.</p>
+                            </div>
                         </div>
                         <div class="input ukrpost_other">
                             <label for="other_name">ФИО<span>*</span></label>
@@ -526,7 +602,9 @@
 
                     </div>
 
-                    <div class="mobile__submit-controller">
+
+
+                    <!-- <div class="mobile__submit-controller">
                         <div class="container">
                             <div class="container-row">
                                 <h4>Стоимость</h4>
@@ -544,48 +622,128 @@
                             <input type="text">
                             <button class="btn_submit btn">Оформить заказ</button>
                         </div>
-                    </div>
+                    </div> -->
                 </form>
 
             </div>
 
             <div class="column">
-                <div class="cart-box">
-                    <div class="cart-box__header">
+                <div class="checkout-minicart">
+                    <div class="minicart-header">
                         <h4>Ваш заказ</h4>
                     </div>
-                    <div class="cart-box__order-list ">
-                        <div class="empty-cart-frame">
-                            <div class="container">
-                                <img src="img/cart-big.svg" alt="">
-                                <h5>Ваша корзина пуста</h5>
-                                <p>Добавьте товары чтобы это исправить</p>
-                                <a href="" class="btn">Начать покупки</a>
+                    <div class="minicart-scrolled-container">
+                        <div class="minicart-product flex-container">
+                            <span class="delete-order"></span>
+                            <div class="image-container">
+                                <img src="../img/order.png" alt="">
+                            </div>
+                            <div class="product-container">
+                                <h4><span>Платье летнее 444415</span></h4>
+                                <div class="price"><span>950 грн</span> 850грн</div>
+                                <h5>Цвет: Белый</h5>
+                                <h5>Размер</h5>
+                                <div class="size-container">
+                                    <div class="size horizontal">
+                                        <input type="checkbox" value="38" id="38">
+                                        <label for="38">38</label>
+                                        <div class="size__counter">
+                                            <span class="arrow-up" id="size-plus"></span>
+                                            <input type="text" value="99">
+                                            <span class="arrow-down" id="size-minus"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price"><span>950 грн</span> 850грн
+                                    <div class="tooltip">
+                                        <p> Модное летнее платье на пуговицах – прекрасное решение для нежного незабываемого образа в стиле шик casual. Модель полуприлегающего силуэта, длиной миди, дополнена изящным тонким пояском, подчеркивающим линию талии.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
+                        <div class="minicart-product flex-container">
+                            <span class="delete-order"></span>
+                            <div class="image-container">
+                                <img src="../img/order.png" alt="">
+                            </div>
+                            <div class="product-container">
+                                <h4><span>Платье летнее 444415</span></h4>
+                                <div class="price"><span>950 грн</span> 850грн</div>
+                                <h5>Цвет: Белый</h5>
+                                <h5>Размер</h5>
+                                <div class="size-container">
+                                    <div class="size horizontal">
+                                        <input type="checkbox" value="38" id="38">
+                                        <label for="38">38</label>
+                                        <div class="size__counter">
+                                            <span class="arrow-up" id="size-plus"></span>
+                                            <input type="text" value="99">
+                                            <span class="arrow-down" id="size-minus"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price"><span>950 грн</span> 850грн
+                                    <div class="tooltip">
+                                        <p> Модное летнее платье на пуговицах – прекрасное решение для нежного незабываемого образа в стиле шик casual. Модель полуприлегающего силуэта, длиной миди, дополнена изящным тонким пояском, подчеркивающим линию талии.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="minicart-product flex-container">
+                            <span class="delete-order"></span>
+                            <div class="image-container">
+                                <img src="../img/order.png" alt="">
+                            </div>
+                            <div class="product-container">
+                                <h4><span>Платье летнее 444415</span></h4>
+                                <div class="price"><span>950 грн</span> 850грн</div>
+                                <h5>Цвет: Белый</h5>
+                                <h5>Размер</h5>
+                                <div class="size-container">
+                                    <div class="size horizontal">
+                                        <input type="checkbox" value="38" id="38">
+                                        <label for="38">38</label>
+                                        <div class="size__counter">
+                                            <span class="arrow-up" id="size-plus"></span>
+                                            <input type="text" value="99">
+                                            <span class="arrow-down" id="size-minus"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price"><span>950 грн</span> 850грн
+                                    <div class="tooltip">
+                                        <p> Модное летнее платье на пуговицах – прекрасное решение для нежного незабываемого образа в стиле шик casual. Модель полуприлегающего силуэта, длиной миди, дополнена изящным тонким пояском, подчеркивающим линию талии.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <a href="" class="cart-box_edit-cart">Редактировать</a>
-                    <div class="cart-box__footer">
-                        <div class="cart-box__footer__row">
-                            <h2>Общая стоимость:</h2>
-                            <h2 class="all_sum">0 грн</h2>
+                    <div class="minicart-footer">
+                        <div class="info-container">
+                            <div class="flex-container s-b">
+                                <h5><span>Скидка:</span></h5>
+                                <h5>
+                                    <span>-200грн</span>
+                                </h5>
+                            </div>
+                            <div class="flex-container s-b">
+                                <h5><span>Сумма к оплате:</span></h5>
+                                <h5>
+                                    <span>-200грн</span>
+                                </h5>
+                            </div>
+                            <div class="flex-container s-b">
+                                <h5><span>Общая стоимость:</span></h5>
+                                <h5>
+                                    <span> <strong>28 670 грн</strong></span>
+                                </h5>
+                            </div>
                         </div>
-                        <div class="cart-box__footer__row">
-                            <h2>Cкидка:</h2>
-                            <h2 class="discount_size">0 грн</h2>
-                        </div>
-                        <div class="cart-box__footer__row">
-                            <h2>Сумма к оплате:</h2>
-                            <h2 class="sum_for_pay"> 0 грн</h2>
-                        </div>
-
-
-                        <div class="cart-box__footer__promo">
-                            <h3>Ваш промокод</h3>
-                            <div class="cart-box__footer__row">
-                                <input type="text" name="" id="" class="promo-input">
-                                <button type="submit" class="btn">Применить</button>
+                        <div class="promocode-container">
+                            <label for="promo">Ваш промокод</label>
+                            <div class="flex-container">
+                                <input type="text" name="promo" id="promo">
+                                <input type="button" value="Применить" class="btn gray">
                             </div>
                         </div>
                     </div>
@@ -818,7 +976,7 @@
     </table>
 </div>
 </div>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="https://code.jquery.com/ui/1.13.0-rc.2/jquery-ui.min.js" integrity="sha256-RQLbEU539dpygNMsBGZlplus6CkitaLy0btTCHcULpI=" crossorigin="anonymous"></script>

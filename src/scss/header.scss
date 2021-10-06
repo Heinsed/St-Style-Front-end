@@ -3,13 +3,13 @@ header {
         display: none;
         @media screen and (min-width: 900px) {
             display: block;
-            margin-bottom: 23px;
         }
     }
     &.mobile-header {
-        @media screen and (min-width: 900px) {
-            display: none;
-        }
+        display: none;
+        // @media screen and (min-width: 900px) {
+        //     display: none;
+        // }
     }
     .header__top-bar {
         background: $main-color;
@@ -130,21 +130,6 @@ header {
             img {
                 object-fit: contain;
                 width: 100%;
-            }
-        }
-        .search-form {
-            max-width: 40%;
-            position: relative;
-            width: 720px;
-            .search-form__input__icon {
-                position: absolute;
-                background: url(../img/search.png) no-repeat;
-                background-size: contain;
-                border: none;
-                width: 21px;
-                height: 22px;
-                right: 18px;
-                top: 16px;
             }
         }
         .auth-icons {

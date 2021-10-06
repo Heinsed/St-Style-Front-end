@@ -17,6 +17,9 @@ body {
     max-width: 1110px;
     margin: 0 auto;
     height: 100%;
+    @media screen and (max-width: 900px) {
+        margin: 0 3%;
+    }
 }
 
 .wrapper__big {
@@ -30,3 +33,5 @@ body {
 
 @import 'checkout-template/main';
 @import 'product-template/main';
+@import 'main-page/main';
+@import 'thank-page/main';

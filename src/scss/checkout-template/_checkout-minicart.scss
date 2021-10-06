@@ -1,0 +1,39 @@
+.checkout-minicart {
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: block;
+    .minicart-header {
+        padding: 20px 30px;
+        border-bottom: 1px solid #DBDBDB;
+    }
+    .minicart-scrolled-container {
+        max-height: 310px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .minicart-footer {
+        border-top: 1px solid #DBDBDB;
+        padding: 15px 30px;
+        .info-container {
+            .flex-container {
+                margin-bottom: 4px;
+            }
+        }
+        .promocode-container {
+            margin-top: 10px;
+            position: relative;
+            input[type=text] {
+                height: 50px;
+                width: 100%;
+                border: 1px dashed #E7462E;
+            }
+            .btn {
+                position: absolute;
+                height: 50px;
+                max-width: 200px;
+                right: 0;
+            }
+        }
+    }
+}

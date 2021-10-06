@@ -324,21 +324,21 @@ $('#product-slider_nav').slick({
 
 });
 
-$('.size label').click(function() {
+$('.size:not(.horizontal) label').click(function() {
     $(this).parents('.size').toggleClass('toggled');
 });
 
 $('#size-plus').click(function() {
     // ОБРАБОТЧИК УВЕЛИЧЕНИЯ КОЛ-ВА ТОВАРА
-})
+});
 
 $('#size-minus').click(function() {
     // ОБРАБОТЧИК УМЕНЬШЕНИЯ КОЛ-ВА ТОВАРА
-})
+});
 
 $('#add-to-wish').click(function() {
     $(this).toggleClass('active');
-})
+});
 
 $('#buy-in-one-click').click(function() {
     if ($(this).parent('.buy-in-one-click').hasClass('active')) {
@@ -369,4 +369,45 @@ $('#product__slider-colors').slick({
     prevArrow: $('#product__slider-color-prev'),
     nextArrow: $('#product__slider-color-next'),
     infinite: false
+});
+$('#product__slider-colors').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: $('#product__slider-color-prev'),
+    nextArrow: $('#product__slider-color-next'),
+    infinite: false
+});
+
+$('#main-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    arrows: true,
+    prevArrow: $('#main-slider_prev'),
+    nextArrow: $('#main-slider_next'),
+})
+
+$(document).ready(function() {
+    $('.custom-select').each(function() {
+        $(this).find('select').children('option').each(function() {
+            let val = $(this).val();
+            let text = $(this).text();
+            $(this).parents('.custom-select').children('.select-list').append('<li id="' + val + '">' + text + '</li>')
+        });
+    });
+});
+
+$(document).on('click', '.custom-select li', function() {
+    let val = $(this).attr('id');
+    let text = $(this).text();
+    $(this).parents('.custom-select').children('.select-bar').text(text);
+    $(this).parents('.custom-select').children('select').val(val).trigger('change');
+    $(this).parents('.select-list').toggleClass('visible');
+    $(this).parents('.select-list').siblings('.select-bar').toggleClass('active');
+});
+
+$('.custom-select .select-bar').click(function() {
+    $(this).siblings('.select-list').toggleClass('visible');
+    $(this).toggleClass('active');
 })
